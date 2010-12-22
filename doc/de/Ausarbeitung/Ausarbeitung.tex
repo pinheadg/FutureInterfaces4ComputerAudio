@@ -31,14 +31,14 @@
 	pdfsubject={Diplomarbeit},
 	pdfkeywords={user interface audio processing}]{hyperref}
 
-% Benutze Seitenköpfe
-\pagestyle{fancy}
-
 % Format der Kapitel- und Abschnittszählung anpassen
 \renewcommand{\chaptermark}[1]{
 	\markboth{}{}}
 \renewcommand{\sectionmark}[1]{
 	\markright{\thesection{}: #1}{}}
+
+% Seitenkopfdekoration
+\pagestyle{fancy}
 
 \begin{document}
 \input{Titelseite}
