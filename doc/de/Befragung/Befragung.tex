@@ -27,7 +27,12 @@
 Die Befragung wird durchgeführt, um für die Möglichkeiten, ein DAW-Programm mit Gesten zu bedienen, Vorschläge zu sammeln.
 Die zur Wahl stehende Gesten finden Sie in der nachfolgenden Tabelle.
 
+\newcounter{rownum}
+\newcommand{\rownumber}{\addtocounter{rownum}{1}\arabic{rownum}}
+\setcounter{rownum}{0}
+
 \newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{img/#1}}
+
 \tablelasttail{\bottomrule}
 \begin{center} \label{tab:Gestures}
 \tablefirsthead
@@ -48,19 +53,19 @@ Die zur Wahl stehende Gesten finden Sie in der nachfolgenden Tabelle.
 }
 \bottomcaption{Verfügbare Gesten}
 \begin{supertabular}{rcl}
-  1 & \quarterpic[right] & Bewegung nach rechts \\
-  2 & \quarterpic[right-up] & Bewegung nach rechts, dann nach oben \\
-  3 & \quarterpic[right-down] & Bewegung nach rechts, dann nach unten \\
-  4 & \quarterpic[right-left] & Bewegung nach rechts, dann nach links \\
-  5 & \quarterpic[right-left-right] & Bewegung nach rechts, dann nach links, rechts \\
-  6 & \quarterpic[left] & Bewegung nach links \\
-  7 & \quarterpic[left-right] & Bewegung nach links, dann nach rechts \\
-  8 & \quarterpic[left-right-left] & Bewegung nach links, dann nach rechts, links \\
-  9 & \quarterpic[up-down-up] & Bewegung nach oben, dann nach unten, oben \\
- 10 & \quarterpic[down-left] & Bewegung nach unten, dann nach links \\
- 11 & \quarterpic[down-right] & Bewegung nach unten, dann nach rechts \\
- 12 & \quarterpic[down-up] & Bewegung nach unten, dann nach oben \\\\
- 13 & \quarterpic[down-up-down] & Bewegung nach oben, dann nach unten, oben \\
+  \rownumber & \quarterpic[right] & Bewegung nach rechts \\
+  \rownumber & \quarterpic[right-up] & Bewegung nach rechts, dann nach oben \\
+  \rownumber & \quarterpic[right-down] & Bewegung nach rechts, dann nach unten \\
+  \rownumber & \quarterpic[right-left] & Bewegung nach rechts, dann nach links \\
+  \rownumber & \quarterpic[right-left-right] & Bewegung nach rechts, dann nach links, rechts \\
+  \rownumber & \quarterpic[left] & Bewegung nach links \\
+  \rownumber & \quarterpic[left-right] & Bewegung nach links, dann nach rechts \\
+  \rownumber & \quarterpic[left-right-left] & Bewegung nach links, dann nach rechts, links \\
+  \rownumber & \quarterpic[up-down-up] & Bewegung nach oben, dann nach unten, oben \\
+  \rownumber & \quarterpic[down-left] & Bewegung nach unten, dann nach links \\
+  \rownumber & \quarterpic[down-right] & Bewegung nach unten, dann nach rechts \\
+  \rownumber & \quarterpic[down-up] & Bewegung nach unten, dann nach oben \\\\
+  \rownumber & \quarterpic[down-up-down] & Bewegung nach oben, dann nach unten, oben \\
 \end{supertabular}
 \end{center}
 
