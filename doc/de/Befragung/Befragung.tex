@@ -11,6 +11,7 @@
 \usepackage{amssymb}
 
 \usepackage{booktabs}
+\usepackage{supertabular}
 
 \usepackage[pdftex]{graphicx}
 
@@ -25,28 +26,69 @@
 
 Die Befragung wird durchgeführt, um für die Möglichkeiten, ein DAW-Programm mit Gesten zu bedienen, Vorschläge zu sammeln.
 
-\begin{table}[ht] \label{tab:Gestures}
-\centering
-\begin{tabular}{lcl} \toprule
-Nummer & Darstellung & Erklärung \\ \midrule \midrule
- 1 & \includegraphics[scale=0.25]{img/up} & \\ \midrule
-\end{tabular}
-\caption{Verfügbare Gesten}
-\end{table}
+\tablelasttail{\bottomrule}
+\begin{center} \label{tab:Gestures}
+\tablefirsthead
+{
+  \toprule
+  Nummer & Darstellung & Erklärung \\ \cmidrule(r){1-1} \cmidrule(lr){2-2} \cmidrule(l){3-3}
+}
+\tablehead
+{
+  \toprule
+  \multicolumn{3}{@{}l}{\small Fortsetzung} \\ \midrule
+  Nummer & Darstellung & Erklärung \\ \cmidrule(r){1-1} \cmidrule(lr){2-2} \cmidrule(l){3-3}  
+}
+\tabletail
+{
+  \midrule
+  \multicolumn{3}{@{}r}{\small Fortsetzung folgt} \\ \bottomrule
+}
+\bottomcaption{Verfügbare Gesten}
+\begin{supertabular}{rcl}
+  1 & \includegraphics[scale=0.25]{img/up} & \\
+  2 & \includegraphics[scale=0.25]{img/down} & \\
+  3 & \includegraphics[scale=0.25]{img/left} & \\
+  4 & \includegraphics[scale=0.25]{img/right} & \\
+  5 & \includegraphics[scale=0.25]{img/up-down} & \\
+  6 & \includegraphics[scale=0.25]{img/down-up} & \\
+  7 & \includegraphics[scale=0.25]{img/left-right} & \\
+  8 & \includegraphics[scale=0.25]{img/right-left} & \\
+  9 & \includegraphics[scale=0.25]{img/down} & \\
+ 10 & \includegraphics[scale=0.25]{img/down} & \\
+\end{supertabular}
+\end{center}
 
 Tragen Sie bitte in die nachfolgende Tabelle die Nummern der Ihrer Ansicht nach geeignetsten Gesten
 in die leere Spalte ein. Einträge von mehreren Gestennummern sind erlaubt. Beim Eintragen von mehreren
 Gestern gilt die zuerst eingetragene als die am meisten geeignete, die nachfolgende als die weniger geeignete
 und so weiter.
 
-\begin{table}[ht] \label{tab:Functions}
-\centering
-\begin{tabular}{llll} \toprule
-Deutsche     & Englische    & Tasten- & Gesten-        \\
-Bezeichnung  & Bezeichnung  & kombi-  & vorschlag      \\
-der Funktion & der Funktion & nation  & (ggf. mehrere) \\ \midrule \midrule
-\end{tabular}
-\caption{Tabelle der \emph{Pro Tools}-Funktionen}
-\end{table}
+\begin{center} \label{tab:Functions}
+\tablefirsthead
+{
+  \toprule
+  Deutsche     & Englische    & Tasten- & Gesten-        \\
+  Bezeichnung  & Bezeichnung  & kombi-  & vorschlag      \\
+  der Funktion & der Funktion & nation  & (ggf. mehrere) \\ \cmidrule(r){1-1} \cmidrule(lr){2-2} \cmidrule(lr){3-3} \cmidrule(l){4-4}
+}
+\tablehead
+{
+  \toprule
+  \multicolumn{4}{@{}l}{\small Fortsetzung} \\ \midrule
+  Deutsche     & Englische    & Tasten- & Gesten-        \\
+  Bezeichnung  & Bezeichnung  & kombi-  & vorschlag      \\
+  der Funktion & der Funktion & nation  & (ggf. mehrere) \\ \cmidrule(r){1-1} \cmidrule(lr){2-2} \cmidrule(lr){3-3} \cmidrule(l){4-4}
+}
+\tabletail
+{
+  \midrule
+  \multicolumn{4}{@{}r}{\small Fortsetzung folgt} \\ \bottomrule
+}
+\bottomcaption{\emph{Pro Tools}-Funktionen}
+\begin{supertabular}{llll}
+ & & & \\
+\end{supertabular}
+\end{center}
 
 \end{document}
