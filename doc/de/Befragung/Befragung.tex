@@ -10,9 +10,12 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+\usepackage{booktabs}
+
 \usepackage[pdftex]{graphicx}
 
-\usepackage[pdfauthor={Wincent Balin}]{hyperref}
+\usepackage[pdfauthor={Wincent Balin},
+            pdftitle={Befragung zur Bedienung von Pro Tools mit Mausgesten}]{hyperref}
 
 \author{Wincent Balin}
 \title{Befragung zur Bedienung von \emph{Pro Tools} mit~Mausgesten}
@@ -26,8 +29,9 @@ genauer für das Unterthema \textsf{Bedienung von DAWs mit Gesten} Vorschläge z
 
 \begin{table}[ht] \label{tab:Gestures}
 \centering
-\begin{tabular}{|l|l|l|} \hline
-Nummer & Darstellung & Erklärung \\ \hline \hline
+\begin{tabular}{lcl} \toprule
+Nummer & Darstellung & Erklärung \\ \midrule \midrule
+ 1 & \includegraphics[scale=0.25]{img/up} & \\ \midrule
 \end{tabular}
 \caption{Verfügbare Gesten}
 \end{table}
@@ -39,9 +43,9 @@ und so weiter.
 
 \begin{table}[ht] \label{tab:Functions}
 \centering
-\begin{tabular}{|l|l|l|l|} \hline
+\begin{tabular}{llll} \toprule
 Deutsche & Englische & Tasten- & Geste \\
-Bezeichnung & Bezeichnung & kombination &  \\ \hline \hline
+Bezeichnung & Bezeichnung & kombination &  \\ \midrule \midrule
 \end{tabular}
 \caption{Tabelle der \emph{Pro Tools}-Funktionen}
 \end{table}
