@@ -36,7 +36,8 @@ Die zur Wahl stehende Gesten finden Sie in der Tabelle~\ref{tab:Gestures}.
 \newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{img/#1}}
 
 \tablelasttail{\bottomrule}
-\begin{center} \label{tab:Gestures}
+
+\begin{center}
 \tablefirsthead
 {
   \toprule
@@ -76,6 +77,7 @@ Die zur Wahl stehende Gesten finden Sie in der Tabelle~\ref{tab:Gestures}.
   \rownumber & \quarterpic[down-up] & Bewegung nach unten, dann nach oben \\
   \rownumber & \quarterpic[down-up-down] & Bewegung nach oben, dann nach unten, oben \\
 \end{supertabular}
+\label{tab:Gestures}
 \end{center}
 
 Tragen Sie bitte in die Tabelle~\ref{tab:Functions} die Nummern der Ihrer Ansicht nach geeignetsten Gesten
@@ -87,7 +89,8 @@ Sie können in dem Fall, wenn Ihnen eine in der Tabelle~\ref{tab:Gestures} nicht
 erscheint, zuerst diese Geste in eine der dafür frei gelassenen Zeilen mit Nummer eintragen und dann diese
 Geste in der Tabelle~\ref{tab:Functions} angeben.
 
-\begin{center} \label{tab:Functions}
+\begin{table}[ht]
+\centering
 \tablefirsthead
 {
   \toprule
@@ -112,6 +115,7 @@ Geste in der Tabelle~\ref{tab:Functions} angeben.
 \begin{supertabular}{llll}
  & & & \\
 \end{supertabular}
-\end{center}
+\label{tab:Functions}
+\end{table}
 
 \end{document}
