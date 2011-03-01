@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="survey-mockup1.svg"
+   inkscape:export-filename="C:\Dokumente und Einstellungen\wincent\Desktop\survey-mockup1.png"
+   inkscape:export-xdpi="27.1"
+   inkscape:export-ydpi="27.1">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="143.15553"
+     inkscape:cy="492.21457"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <text
+       sodipodi:linespacing="125%"
+       id="text2985"
+       y="69.505043"
+       x="43.823936"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="69.505043"
+         x="43.823936"
+         id="tspan2987"
+         sodipodi:role="line">Alter</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text2989"
+       y="90.555084"
+       x="43.167686"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="90.555084"
+         x="43.167686"
+         id="tspan2991"
+         sodipodi:role="line">Geschlecht</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text2993"
+       y="111.45865"
+       x="42.927452"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="111.45865"
+         x="42.927452"
+         id="tspan2995"
+         sodipodi:role="line">Beruf</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text2997"
+       y="132.36218"
+       x="42.85714"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="132.36218"
+         x="42.85714"
+         id="tspan2999"
+         sodipodi:role="line">Erfahrung</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3001"
+       d="m 28.571427,148.07647 c 601.428573,0 601.428573,0 601.428573,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3003"
+       y="174.50505"
+       x="41.287392"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="174.50505"
+         x="41.287392"
+         id="tspan3005"
+         sodipodi:role="line">Mausgesten,Single Touch Gesten</tspan></text>
+    <g
+       id="1"
+       transform="translate(64.76981,238.35585)">
+      <path
+         d="M 71.888951,2.995373 14.976865,60.656303 13.479178,59.158616 11.981492,57.66093 69.642422,0.74884324 70.391265,1.4976865 71.888951,2.995373 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="2"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 0,72.637794 22.465297,61.405146 11.232649,50.172497 0,72.637794 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="3"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="97.825615"
+       y="335.93362"
+       id="text3055"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3057"
+         x="97.825615"
+         y="335.93362">1</tspan></text>
+    <g
+       id="1-1"
+       transform="translate(384.2171,238.35308)">
+      <path
+         d="M 0,21.045096 14.96693,0.75161057 16.463623,1.5032211 17.960316,3.0064423 2.9933859,23.299928 1.496693,21.796707 0,21.045096 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="2-7"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 18.708662,1.5032211 0,71.4030049 -1.496693,0 -2.245039,0 0,-71.4030049 1.496693,0 2.245039,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="3-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="390.25504"
+       y="335.93362"
+       id="text3072"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3074"
+         x="390.25504"
+         y="335.93362">3</tspan></text>
+    <g
+       id="1-0"
+       transform="translate(528.16985,238.35308)">
+      <path
+         d="m 0,72.154615 27.774278,-70.6513939 1.501313,0 1.501312,0.7516106 L 3.7532809,73.657836 1.5013124,72.906226 0,72.154615 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="2-9"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 30.776903,0.75161057 60.80315,72.154615 59.301838,72.906226 57.049869,73.657836 27.774278,2.2548317 29.275591,1.5032211 30.776903,0.75161057 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="3-48"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 15.013124,40.586971 45.03937,30.816033 -0.750656,1.503222 -1.501313,1.503221 -45.03937,-30.816034 0.750656,-1.503221 1.501313,-1.503221 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="555.44836"
+       y="335.89847"
+       id="text3091"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3093"
+         x="555.44836"
+         y="335.89847">4</tspan></text>
+    <g
+       id="1-8"
+       transform="translate(233.74747,237.60147)">
+      <path
+         d="m 9.7810345,1.5032211 0,51.8611299 -1.5047745,0 -2.2571618,0 0,-51.8611299 2.2571618,0 1.5047745,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="2-2"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 8.27626,72.906226 15.800133,48.854687 0,48.854687 8.27626,72.906226 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="3-45"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 29.343104,1.5032211 0,51.8611299 -1.504775,0 -2.257162,0 0,-51.8611299 2.257162,0 1.504775,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="4-5"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 27.838329,72.906226 7.523873,-24.051539 -15.800133,0 8.27626,24.051539 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="5"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 15.800133,72.906226 0,-51.86113 2.257161,0 1.504775,0 0,51.86113 -1.504775,0 -2.257161,0 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="6"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 18.057294,1.5032211 -8.2762595,24.0515379 15.8001325,0 -7.523873,-24.0515379 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="7"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="248.23228"
+       y="335.93362"
+       id="text3116"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3118"
+         x="248.23228"
+         y="335.93362">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="72.142853"
+       y="413.07648"
+       id="text3120"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3122"
+         x="72.142853"
+         y="413.07648">...</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3001-1"
+       d="m 28.571427,450.93361 c 601.428573,0 601.428573,0 601.428573,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3003-7"
+       y="480.46765"
+       x="41.287392"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="480.46765"
+         x="41.287392"
+         id="tspan3005-1"
+         sodipodi:role="line">Multi Touch Gesten</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="70.902901"
+       y="553.96375"
+       id="text3120-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3122-5"
+         x="70.902901"
+         y="553.96375">...</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3001-1-2"
+       d="m 26.42857,625.21933 c 601.42857,0 601.42857,0 601.42857,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="44.285713"
+       y="654.50507"
+       id="text3202"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3204"
+         x="44.285713"
+         y="654.50507">Pro Tools Funktion</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="322.85715"
+       y="654.65155"
+       id="text3206"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3208"
+         x="322.85715"
+         y="654.65155">Passende Geste(n)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="45.714287"
+       y="683.79077"
+       id="text3210"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3212"
+         x="45.714287"
+         y="683.79077">Ausschneiden/Cut</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="44.817802"
+       y="713.07648"
+       id="text3214"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3216"
+         x="44.817802"
+         y="713.07648">Kopieren/Copy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="44.74749"
+       y="745.93359"
+       id="text3218"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3220"
+         x="44.74749"
+         y="745.93359">Einfügen/Paste</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="44.817802"
+       y="776.64789"
+       id="text3222"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3224"
+         x="44.817802"
+         y="776.64789">Löschen/Delete</tspan></text>
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.999999,665.21932 c 557.142861,0 557.142861,0 557.142861,0"
+       id="path3226"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.999999,695.75503 c 557.142861,0 557.142861,0 557.142861,0"
+       id="path3226-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.999997,726.29075 c 557.142863,0 557.142863,0 557.142863,0"
+       id="path3226-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.999996,756.82646 c 557.142864,0 557.142864,0 557.142864,0"
+       id="path3226-1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4d4d4d;stroke:#4d4d4d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 39.999997,787.36218 c 557.142863,0 557.142863,0 557.142863,0"
+       id="path3226-4"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="55.902901"
+       y="836.10663"
+       id="text3120-1-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3122-5-3"
+         x="55.902901"
+         y="836.10663">...</tspan></text>
+  </g>
+</svg>
