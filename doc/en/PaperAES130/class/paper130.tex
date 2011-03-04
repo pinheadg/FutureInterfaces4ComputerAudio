@@ -1,0 +1,303 @@
+% Example file for 130th Convention paper
+\documentclass{aes130}
+\hyphenation{Post-Script}
+
+ 
+\authors{John Author\aff{1}, 
+         Jane Quincy-Author\aff{1}, 
+         and James Researcher\aff{2}}
+
+\affiliation[1]{BigCity College, City, ST, 00000, Country}
+\affiliation[2]{Smallville State Technical Institute, Smallville, XR,
+99999, Country}
+
+\correspondence{Jane Quincy-Author}{jane\_author@snailmail.qzl}
+
+\lastnames{Author, Quincy-Author, Researcher}
+
+\title{The Title of this Paper is not\\ ``The Title of this Paper''}
+
+\shorttitle{Abbreviated Paper Title}
+
+
+\begin{abstract}
+An informative and self-contained abstract of about 120 words must be
+provided. An informative and self-contained abstract of about 120 words
+must be provided. An informative and self-contained abstract of about
+120 words must be provided. An informative and self-contained abstract
+of about 120 words must be provided. An informative and self-contained
+abstract of about 120 words must be provided.
+\end{abstract}
+
+\begin{document}
+
+\maketitle % MANDATORY! 
+
+
+\section{MAJOR HEADING}
+This \LaTeX\ file, which should be compatible with any PC, Unix, or
+Macintosh-based \LaTeX\ system, is intended to present a consistent style so
+that all authors use the same front-page header, two-column format,
+and headers and footers. It should be possible simply to replace this text
+with your prepared text.
+
+
+\textbf{Note: You may use any word-processing or page-layout program.}
+The AES paper-submission site will convert your file to a PDF file;
+you can also submit a PDF. If you do submit a PDF, make sure to embed
+your fonts and graphics but do not use password protection.
+\textbf{Your PDF should have only Type 1 fonts. Please try to keep the
+size of the final PDF file below 1 MB}. If it is larger try using
+lower-resolution graphics to reduce the size of the file.
+
+Papers for AES conventions are not edited by the AES editorial
+staff. Papers will be published in print, on CD-ROM, and on the AES
+web site exactly as submitted. It is therefore important that authors
+prepare their manuscripts in accordance with these guidelines.
+
+Major headings (see above) are in capital letters (upper case),
+Helvetica font, 10 point size, bold style, left justified. All headings
+are preceded by a blank line. Body text, like this, is Times Roman
+font, 10 point size, plain style. It should be fully justified to be
+flush left and flush right. 
+
+\subsection{Minor Heading}
+Minor headings use both upper-case and lower-case letters and, like
+the major headings, Helvetica font, 10 point size, bold style, left
+justified.
+
+\subsubsection{Example}
+This is an example subsubsection set using the \verb|\subsubsection|
+command. 
+
+
+\begin{table*}
+\begin{center}
+\begin{tabular}{|c|l|r|}
+\hline
+234093241&23402312&3432829807434\\
+2398234&423403290&123144298\\
+2340243012597398&1245987533&24982499\\
+\hline
+\end{tabular}
+\caption{This is a two-column table.}
+\end{center}
+\end{table*}
+
+\section{CONTENT}
+To ensure that convention papers are consistent with the goals of the
+AES, the following guidelines shall be considered by authors.
+
+Technical content shall be accurate. It should cite original work or
+review previous work giving proper credit.
+
+If the paper describes a product, the content should dwell on the
+technical aspects of the equipment (circuitry, layout, specifications,
+functions, and applications). 
+
+Company logos shall not be used. Manufacturers name and model names or
+numbers shall not be used in titles and abstracts, and should be kept
+to a minimum in the text (generic descriptions should be used).
+
+The trademark symbol ${}^{\textsc{\scriptsize TM}}$ 
+is not permitted. Trademarked names in titles
+and abstracts should be replaced by generic descriptions where
+possible. If trademarked names are retained in titles and abstracts,
+they will not be acknowledged as such. The first time a trademarked
+name appears in the body text, it may be footnoted. The footnote will
+state that it is registered, and the name of the owner.
+
+
+
+\section{References}
+References should be numbered and listed at the end of the text, and
+should be cited in the text consecutively by number [shown in
+square brackets].
+
+\section{Writing Style}
+Good grammar should be used and writing should be easy to
+understand. Superlatives should be omitted. Words and phrases shall
+not be abbreviated in titles, abstracts, nor the first time they
+appear in the text.
+
+\def\SI{$\triangle$}%
+\def\deprecated{\,{\fboxsep=0pt\fbox{\vrule width0pt height0.4pc%
+                                   \vrule width0.4pc height0pc}}\,}%
+
+Metric units according to the System of International
+Units (SI) should be used. Following are some frequently used SI units
+and their symbols, some non-SI units that may be used with SI units
+(\SI), and some non-SI units that are deprecated (\deprecated).
+
+
+\def\tentry#1#2{\>#1\>#2\\}%
+\begin{tabbing}
+\qquad\=\kern1.75in\=ZZ\kill
+\tentry{\textbf{Unit Name}}{\textbf{Unit Symbol}}
+\tentry{ampere}{A}
+\tentry{bit or bits}{spell out}
+\tentry{bytes}{spell out}
+\tentry{decibel}{dB}
+\tentry{degree (plane angle) (\SI)}{$\circ$}
+\tentry{farad}{F}
+\tentry{gauss (\deprecated)}{Gs}
+\tentry{gram}{g}
+\tentry{henry}{H}
+\tentry{hertz}{Hz}
+\tentry{hour (\SI)}{h}
+\tentry{inch (\deprecated)}{in}
+\tentry{joule}{J}
+\tentry{kelvin}{K}
+\tentry{kilohertz}{kHz}
+\tentry{kilohm}{k$\Omega$}
+\tentry{liter (\SI)}{l, L}
+\tentry{megahertz}{MHz}
+\tentry{meter}{m}
+\tentry{microfarad}{$\mu\mbox{F}$}
+\tentry{micrometer}{$\mu\mbox{m}$}
+\tentry{microsecond}{$\mu\mbox{s}$}
+\tentry{milliampere}{mA}
+\tentry{millihenry}{mH}
+\tentry{millimeter}{mm}
+\tentry{millivolt}{mV}
+\tentry{minute (time) (\SI)}{min}
+\tentry{minute (plane angle) (\SI)}{'}
+\tentry{nanosecond}{ns}
+\tentry{oersted (\deprecated)}{Oe}
+\tentry{ohm}{$\Omega$}				
+\tentry{pascal}{Pa}
+\tentry{picofarad}{pF}
+\tentry{second (time)}{s}
+\tentry{second (plane angle) (\SI)}{"}
+\tentry{siemens}{S}
+\tentry{tesla}{T}
+\tentry{volt}{V}
+\tentry{watt}{W}
+\tentry{weber}{Wb}
+\end{tabbing}
+
+
+
+\section{COPYRIGHT}
+The top portion of the first page of this convention paper is
+copyrighted by the Audio Engineering Society and may not be reproduced
+without permission. Copyright to the content of an AES convention
+paper remains with its author. However, when submitting a paper for
+presentation at an AES convention, an author agrees that the AES
+\textit{Journal} will have the first opportunity to consider it for
+publication. If it is accepted for publication in the
+\textit{Journal}, authors will be asked to execute a transfer of
+copyright agreement.
+
+
+
+\section{LAYOUT GEOMETRY}
+Since you will be submitting this paper electronically, you don't have
+to be concerned about using A4 paper or 8.5~by 11~inch paper. With the
+current margin settings you will be able to print on either size paper
+for proofing purposes before submitting your paper electronically.
+
+\section{FIGURES}
+Figures, diagrams, and charts must be dark enough to reproduce in
+black only. If you are using color in a graph or chart to designate
+meaning, make sure that the meaning is not lost when your paper is
+printed on a B\&W printer. Do this by using redundant text to identify
+color lines. Minimum line width is 1/2 point. Figures should fit into
+either one (see Fig.~1) or two columns. 
+
+
+
+Figures, tables, and illustrations should be placed consecutively in
+the text, as close as possible to their reference in the text. Figures
+must be normally oriented on the page and not turned sideways. All
+drawings and figures must be numbered (Fig.~1 etc.) and captioned.
+
+\begin{figure}
+\vbox{\fbox{%
+\dimen0=\columnwidth
+\advance\dimen0 by -\fboxsep
+\advance\dimen0 by -\fboxsep
+\advance\dimen0 by -\columnsep
+\parbox[t]{\dimen0}{%
+\bigskip
+\begin{center}
+\end{center}
+\bigskip
+}}
+\nobreak
+\caption[1]{This is a one-column figure.}}
+\end{figure}
+
+
+
+Figure labels must be legible, at least 7 point size, using Helvetica
+font for preference. Filled areas should use screens of dots or
+cross-hatching rather than grey fills.
+
+Photographs and graphic images should be saved as low-resolution
+(72~dpi) files and embedded in the text following the same guidelines
+as those outlined above for figures and tables.
+
+\begin{figure*}[tb!]
+\begin{center}
+\fbox{\vrule width0pt height 1in\vrule width6in height 0in}
+\end{center}
+\caption[2]{It is best to place to place two-column figures at the bottom
+or top of a page.}
+\end{figure*}
+
+\section{EQUATIONS}
+Long equations are more readable when compressed into a single column
+in a larger text size:
+\begin{large}
+\begin{eqnarray*}
+X &=& a + b + c + d + e + f + g + h + i + j \\
+  &&    + k  + l + m + \dots z
+\end{eqnarray*}%
+\end{large}%
+Equations that cannot be conveniently compressed into a single column
+can be extended across the entire page. It is best to put such long
+equations at the top or the bottom of the page so as not to interfere
+with the rest of the two-column text on the page.
+\begin{equation}
+x=y
+\end{equation}
+
+\section{PDF FILES}
+Be certain that when creating the PostScript or PDF file from your
+\LaTeX\ files that you have the PostScript Type~1 fonts installed in
+your \TeX\ system. If you do not and are instead using the bitmapped
+versions of the \TeX\ fonts, then your resulting PostScript/PDF file
+will look very bad when printed or viewed on-line. To get the free
+\TeX\ Type~1 fonts, go to 
+http://www.ams.org/tex/type1-fonts.html. 
+For instruction on how to install these fonts for your \TeX\ system,
+contact your system administrator or \TeX\ vendor. 
+
+
+\begin{thebibliography}{99}
+
+\bibitem{DEK1}
+Author, ``Title,'' presented at the AES 114th convention, 
+Amsterdam, The Netherlands, 2003 March 22--25. 
+
+%\bibitem{DEK2}
+%D. E. Knuth, {\it Selected papers on analysis of algorithms}, CSLI
+%Publ., Stanford, CA, 2000; CNO
+%CMP 1 762 319 
+%
+%\bibitem{DEK3}
+%D. E. Knuth, Algorithmica {\bf 22} (1998), no.~4, 561--568; MR
+%2000j:68037 
+%
+%\bibitem{DEK4}
+%R. L. Graham, D. E. Knuth and O. Patashnik, {\it Concrete mathematics}
+%(Polish), Translated from the
+%second English (1994) edition by P. Chrzastowski, A. Czumaj,
+%L. Gasieniec and M. Raczunas, Second
+%edition, Wydawnictwo Naukowe PWN, Warsaw, 1998; MR 99m:68002
+%
+\end{thebibliography}
+
+
+\end{document}
