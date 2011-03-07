@@ -10,7 +10,6 @@ SRCDIR	= ..
 DSTDIR	= .
 
 .pdf.png:
-	@echo "Converting $< to $@"
 	convert $< -transparent white -scale 40x40 $@
 
 VPATH	= ${SRCDIR}
