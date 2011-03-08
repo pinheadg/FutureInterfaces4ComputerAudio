@@ -1,3 +1,36 @@
+German:
+
+Einen Takt vorwärts gehen
+Einen Takt zurück gehen
+Zum Anfang springen
+Zum Ende springen
+Einzelnes Track ins Fenster einpassen
+Markierten Abschnitt ins Fenster einpassen
+Alle Spuren vertikal ins Fenster einpassen
+Alle Spuren horizontal ins Fenster einpassen
+Zoom-Voreinstellung aufrufen
+Markierten Abschnitt ausschneiden
+Markierten Abschnitt kopieren
+Vorher kopierten oder ausgeschnittenen Abschnitt einfügen
+Markierten Abschnitt duplicate
+Markierten Abschnitt entfernen
+Markierten Abschnitt trennen
+Markierten Abschnitt mit der Umgebung verbinden
+Metronom ein-/ausschalten
+Letzte Aktion widerrufen
+Zuletzt widerrufene Aktion wiederholen
+Alles auswählen
+Reglerwert erhöhen
+Reglerwert herabsetzen
+
+
+
+
+
+
+
+Pro Tools Shortcuts
+
 Zoom presets 1–5
 Play to/from edit start by pre/post-roll value
 Play to/from edit end by pre/post roll amount
