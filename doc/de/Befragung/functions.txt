@@ -12,7 +12,7 @@ Zoom-Voreinstellung aufrufen
 Markierten Abschnitt ausschneiden
 Markierten Abschnitt kopieren
 Vorher kopierten oder ausgeschnittenen Abschnitt einfügen
-Markierten Abschnitt duplicate
+Markierten Abschnitt duplizieren
 Markierten Abschnitt entfernen
 Markierten Abschnitt trennen
 Markierten Abschnitt mit der Umgebung verbinden
