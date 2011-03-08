@@ -24,25 +24,35 @@
 \begin{document}
 \maketitle
 
-Die Befragung wird durchgeführt, um für die Möglichkeiten, ein DAW-Programm mit Gesten zu bedienen, Vorschläge zu sammeln.
-Die zur Wahl stehende Gesten finden Sie in der Tabelle~\ref{tab:Gestures}.
+%Die Befragung wird durchgeführt, um für die Möglichkeiten, ein DAW-Programm mit Gesten zu bedienen, Vorschläge zu sammeln.
+%Die zur Wahl stehende Gesten finden Sie in der Tabelle~\ref{tab:Gestures}.
+%
+%Tragen Sie bitte in die Tabelle~\ref{tab:Functions} die Nummern der Ihrer Ansicht nach geeignetsten Gesten
+%in die rechte Spalte ein. Einträge von mehreren Gestennummern sind erlaubt. Beim Eintragen von mehreren
+%Gesten gilt die zuerst eingetragene als die am meisten geeignete, die nachfolgende als die weniger geeignete
+%und so weiter.
+%
+%Sie können in dem Fall, wenn Ihnen eine in der Tabelle~\ref{tab:Gestures} nicht aufgeführte Geste am geeignetsten
+%erscheint, zuerst diese Geste in eine der dafür frei gelassenen Zeilen mit Nummer eintragen und dann diese
+%Geste in der Tabelle~\ref{tab:Functions} angeben.
 
-Tragen Sie bitte in die Tabelle~\ref{tab:Functions} die Nummern der Ihrer Ansicht nach geeignetsten Gesten
-in die rechte Spalte ein. Einträge von mehreren Gestennummern sind erlaubt. Beim Eintragen von mehreren
-Gesten gilt die zuerst eingetragene als die am meisten geeignete, die nachfolgende als die weniger geeignete
-und so weiter.
+% Scale picture to 0.25 automagically
+\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{img/#1}}
 
-Sie können in dem Fall, wenn Ihnen eine in der Tabelle~\ref{tab:Gestures} nicht aufgeführte Geste am geeignetsten
-erscheint, zuerst diese Geste in eine der dafür frei gelassenen Zeilen mit Nummer eintragen und dann diese
-Geste in der Tabelle~\ref{tab:Functions} angeben.
+Stellen Sie sich vor: Sie sitzen vor Ihrem Arbeitsrechner und haben Ihr bevorzugtes Audiobearbeitungsprogramm
+auf dem Bildschirm, aber die Tastatur fehlt. Sie können das Programm mit der Maus oder mit einem Touchscreen bedienen.
+Nach einer Weile vermissen Sie die Tastenkürzel und möchten diese durch Maus- oder Touchscreengesten ersetzen.
+Die Mausgesten zeichnen Sie mit der gedrückten rechten Maustaste.
+
+Wählen Sie in der nachfolgenden Umfrage die Ihrer Meinung nach zu den genannten Funktionen passenden Gesten.
+Der rote Punkt steht für den Anfang einer Geste. Mehrere Punkte bedeuten eine Multitouchgeste.
+Die Geste \quarterpic[digit-1] ist stellvertretend für die mit dem Eingabegerät gezeichneten Ziffern. Genauso steht
+die Geste \quarterpic[letter-a] für die mit dem Eingabegerät geschriebenen Buchstaben.
 
 % Enumerate table rows
 \newcounter{rownum}
 \newcommand{\rownumber}{\addtocounter{rownum}{1}\arabic{rownum}}
 \setcounter{rownum}{0}
-
-% Scale picture to 0.25 automagically
-\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{img/#1}}
 
 \tablelasttail{\bottomrule}
 
@@ -84,7 +94,7 @@ Geste in der Tabelle~\ref{tab:Functions} angeben.
   \rownumber & \quarterpic[down-left] & Bewegung nach unten, dann nach links \\
   \rownumber & \quarterpic[down-right] & Bewegung nach unten, dann nach rechts \\
   \rownumber & \quarterpic[down-up] & Bewegung nach unten, dann nach oben \\
-  \rownumber & \quarterpic[down-up-down] & Bewegung nach oben, dann nach unten, oben \\
+  \rownumber & \quarterpic[down-up-down] & Bewegung nach unten, dann nach oben, unten \\
   \rownumber & \quarterpic[diag-up-left] & Bewegung diagonal nach oben links \\
   \rownumber & \quarterpic[diag-up-left-down-right] & Bewegung diagonal nach oben links und zurück \\
   \rownumber & \quarterpic[diag-up-right] & Bewegung diagonal nach oben rechts \\
@@ -93,8 +103,16 @@ Geste in der Tabelle~\ref{tab:Functions} angeben.
   \rownumber & \quarterpic[diag-down-left-up-right] & Bewegung diagonal nach unten links und zurück \\
   \rownumber & \quarterpic[diag-down-right] & Bewegung diagonal nach unten rechts \\
   \rownumber & \quarterpic[diag-down-right-up-left] & Bewegung diagonal nach unten rechts und zurück \\
+  \rownumber & \quarterpic[rotate-clockwise] & Kreisbewegung im Uhrzeigersinn \\
+  \rownumber & \quarterpic[rotate-counterclockwise] & Kreisbewegung gegen den Uhrzeigersinn \\
   \rownumber & \quarterpic[digit-1] & Eine Ziffer wird gezeichnet \\
   \rownumber & \quarterpic[letter-a] & Ein Buchstabe wird gezeichnet \\
+  \rownumber & \quarterpic[multi-pinch-horizontal] & Zwei Finger horizontal zusammen ziehen \\
+  \rownumber & \quarterpic[multi-pinch-vertical] & Zwei Finger vertikal zusammen ziehen \\
+  \rownumber & \quarterpic[multi-spread-horizontal] & Zwei Finger horizontal auseinander ziehen \\
+  \rownumber & \quarterpic[multi-spread-vertical] & Zwei Finger vertikal auseinander ziehen \\
+  \rownumber & \quarterpic[multi-rotate-clockwise] & Drehung mit zwei Fingern im Uhrzeigersinn \\
+  \rownumber & \quarterpic[multi-rotate-counterclockwise] & Drehung mit zwei Fingern gegen den Uhrzeigersinn \\
   \rownumber & \quarterpic[empty] &   \\
   \rownumber & \quarterpic[empty] &   \\
   \rownumber & \quarterpic[empty] &   \\
@@ -110,6 +128,32 @@ Geste in der Tabelle~\ref{tab:Functions} angeben.
 \label{tab:Gestures}
 \end{center}
 
+
+
+\begin{itemize}
+\item Einen Takt vorwärts gehen
+\item Einen Takt zurück gehen
+\item Zum Anfang springen
+\item Zum Ende springen
+\item Einzelnes Track ins Fenster einpassen
+\item Markierten Abschnitt ins Fenster einpassen
+\item Alle Spuren vertikal ins Fenster einpassen
+\item Alle Spuren horizontal ins Fenster einpassen
+\item Zoom-Voreinstellung aufrufen
+\item Markierten Abschnitt ausschneiden
+\item Markierten Abschnitt kopieren
+\item Vorher kopierten oder ausgeschnittenen Abschnitt einfügen
+\item Markierten Abschnitt duplicate
+\item Markierten Abschnitt entfernen
+\item Markierten Abschnitt trennen
+\item Markierten Abschnitt mit der Umgebung verbinden
+\item Metronom ein-/ausschalten
+\item Letzte Aktion widerrufen
+\item Zuletzt widerrufene Aktion wiederholen
+\item Alles auswählen
+\item Reglerwert erhöhen
+\item Reglerwert herabsetzen
+\end{itemize}
 
 \begin{center}
 \centering
@@ -136,44 +180,87 @@ Geste in der Tabelle~\ref{tab:Functions} angeben.
 \bottomcaption{\emph{Pro Tools}-Funktionen}
 \begin{supertabular}{llll}
  & & & \\
+%Zoom presets 1--5 &  &  \\
+%Play to/from edit start by pre/post-roll value &  &  \\
+%Play to/from edit end by pre/post roll amount &  &  \\
+%Copy Edit selection to Timeline selection &  &  \\
+%
+%Toggle pre-defined common Track Views &  &  \\
+%(audio track = Waveform and Volume; &  &  \\
+%MIDI track = Notes and Regions; &  &  \\
+%Instrument tracks = Notes and Regions) &  &  \\
+%
+%Capture Time Code &  &  \\
+%Center Timeline selection start &  &  \\
+%Center Timeline selection end &  &  \\
+%Zoom Toggle &  &  \\
+%Zoom Out horizontally &  &  \\
+%Zoom In horizontally &  &  \\
+%Move Edit selection up &  &  \\
+%Move Edit selection down &  &  \\
+%Tab back &  &  \\
+%Tab forward &  &  \\
+%Play Edit Selection &  &  \\
+%Trim Start to Insertion &  &  \\
+%Trim End to Insertion &  &  \\
+%Fade to Start (available if no selection) &  &  \\
+%Fade (without showing Fades dialog) &  &  \\
+%Fade to End (available if no selection) &  &  \\
+%Undo &  &  \\
+%Cut &  &  \\
+%Copy &  &  \\
+%Paste &  &  \\
+%Separate &  &  \\
+%Timeline Insertion follows Playback (disable/enable) &  &  \\
+%
+%Nudge back by Nudge value; &  &  \\
+%Nudge Timeline selection &  &  \\
+%(Link Timeline and Edit Selection disabled) &  &  \\
+%or Nudge region (Link Timeline &  &  \\
+%and Edit Selection enabled) &  &  \\
+
+%Nudge forward by Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled) &  &  \\
+%Nudge back by next large Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled) &  &  \\
+%Nudge forward by next larger Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled) &  &  \\
+
 \end{supertabular}
 \label{tab:Functions}
 \end{center}
 
 
-\begin{itemize}
-\item Zoom presets 1–5
-\item Play to/from edit start by pre/post-roll value
-\item Play to/from edit end by pre/post roll amount
-\item Copy Edit selection to Timeline selection
-\item Toggle pre-defined common Track Views (audio track = Waveform and Volume; MIDI track = Notes and Regions; Instrument tracks = Notes and Regions)
-\item Capture Time Code
-\item Center Timeline selection start
-\item Center Timeline selection end
-\item Zoom Toggle
-\item Zoom Out horizontally
-\item Zoom In horizontally
-\item Move Edit selection up
-\item Move Edit selection down
-\item Tab back
-\item Tab forward
-\item Play Edit Selection
-\item Trim Start to Insertion
-\item Trim End to Insertion
-\item Fade to Start (available if no selection)
-\item Fade (without showing Fades dialog)
-\item Fade to End (available if no selection)
-\item Undo
-\item Cut
-\item Copy
-\item Paste
-\item Separate
-\item Timeline Insertion follows Playback (disable/enable)
-\item Nudge back by Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
-\item Nudge forward by Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
-\item Nudge back by next large Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
-\item Nudge forward by next larger Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
-\end{itemize}
+%\begin{itemize}
+%\item Zoom presets 1–5
+%\item Play to/from edit start by pre/post-roll value
+%\item Play to/from edit end by pre/post roll amount
+%\item Copy Edit selection to Timeline selection
+%\item Toggle pre-defined common Track Views (audio track = Waveform and Volume; MIDI track = Notes and Regions; Instrument tracks = Notes and Regions)
+%\item Capture Time Code
+%\item Center Timeline selection start
+%\item Center Timeline selection end
+%\item Zoom Toggle
+%\item Zoom Out horizontally
+%\item Zoom In horizontally
+%\item Move Edit selection up
+%\item Move Edit selection down
+%\item Tab back
+%\item Tab forward
+%\item Play Edit Selection
+%\item Trim Start to Insertion
+%\item Trim End to Insertion
+%\item Fade to Start (available if no selection)
+%\item Fade (without showing Fades dialog)
+%\item Fade to End (available if no selection)
+%\item Undo
+%\item Cut
+%\item Copy
+%\item Paste
+%\item Separate
+%\item Timeline Insertion follows Playback (disable/enable)
+%\item Nudge back by Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
+%\item Nudge forward by Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
+%\item Nudge back by next large Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
+%\item Nudge forward by next larger Nudge value; Nudge Timeline selection (Link Timeline and Edit Selection disabled) or Nudge region (Link Timeline and Edit Selection enabled)
+%\end{itemize}
 
 
 \end{document}
