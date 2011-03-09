@@ -15,7 +15,7 @@ Vorher kopierten oder ausgeschnittenen Abschnitt einfügen
 Markierten Abschnitt duplizieren
 Markierten Abschnitt entfernen
 Markierten Abschnitt trennen
-Markierten Abschnitt mit der Umgebung verbinden
+Markierte Abschnitte zusammenkleben
 Metronom ein-/ausschalten
 Letzte Aktion widerrufen
 Zuletzt widerrufene Aktion wiederholen
