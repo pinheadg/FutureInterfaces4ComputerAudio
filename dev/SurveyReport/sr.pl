@@ -16,6 +16,17 @@ my @gesture_expertise =
   "illegal"
 );
 
+# Decoder of audio production expertise
+my @audioproduction_expertise =
+(
+  "illegal",
+  "student_audio",
+  "student_media",
+  "producer_professional",
+  "producer_hobby",
+  "illegal"
+);
+
 # Decoder of gesture names
 my @gesture_name =
 (
