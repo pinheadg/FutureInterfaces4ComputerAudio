@@ -36,6 +36,18 @@ my @gender =
   "illegal"
 );
 
+# Decoder of age
+my @age =
+(
+  "illegal",
+  "25 or less",
+  "26 to 35",
+  "36 to 45",
+  "46 to 55",
+  "56 or more",
+  "illegal"
+);
+
 # Decoder of gesture names
 my @gesture_name =
 (
