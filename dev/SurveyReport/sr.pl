@@ -61,6 +61,34 @@ my @gesture_name =
   "illegal"
 );
 
+# Decoder of functions
+my %functions =
+{
+  "p1"  => "Go one bar forward",
+  "p2"  => "Go one bar backward",
+  "p3"  => "Jump to beginning",
+  "p4"  => "Jump to end",
+  "p5"  => "Fit selected track to window",
+  "p6"  => "Fit selected region to window",
+  "p7"  => "Fit all tracks to window: vertical",
+  "p8"  => "Fit all tracks to window: horizontal",
+  "p9"  => "Recall zoom preset",
+  "p10" => "Cut selected region",
+  "p11" => "Copy selected region",
+  "p12" => "Paste previously cut or copied region",
+  "p13" => "Duplicate selected region",
+  "p14" => "Delete selected region",
+  "p15" => "Split selected region",
+  "p16" => "Glue selected regions together",
+  "p17" => "Toggle metronome",
+  "p18" => "Undo last action",
+  "p19" => "Redo action undone last",
+  "p20" => "Select all",
+  "p21" => "Increase value of a control",
+  "p22" => "Decrease value of a control"
+};
+
+
 
 # If no arguments specified, die with message
 if(scalar(@ARGV) == 0)
