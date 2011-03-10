@@ -7,4 +7,6 @@ doc/de/Ausarbeitung/Ausarbeitung.pdf
 doc/de/Befragung/Befragung.pdf
 doc/en/PaperAES130/GesturesInDAW.pdf
 Thumbs.db
+*.bbl
+*.blg
 
