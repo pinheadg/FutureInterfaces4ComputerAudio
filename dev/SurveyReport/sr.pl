@@ -27,6 +27,15 @@ my @audioproduction_expertise =
   "illegal"
 );
 
+# Decoder of gender
+my @gender =
+(
+  "illegal",
+  "female",
+  "male",
+  "illegal"
+);
+
 # Decoder of gesture names
 my @gesture_name =
 (
