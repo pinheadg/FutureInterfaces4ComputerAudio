@@ -104,12 +104,42 @@ foreach(@ARGV)
   open(EMAIL, "<$_")
     or die "Could not open file " . $_ . "\n";
 
+
   # Process lines
   while(<EMAIL>)
   {
     chomp;
 
     print $_ . "\n";
+
+    if(m/^#1#([\d,])+/)
+    {
+      my $gie = $1;
+      print "Gestural interface experience: $gie\n";
+    }
+    elsif(m/^#7#(.+)$/)
+    {
+      # Store function-gesture-pairs
+      $_ = $1;
+
+      # Cut into single function-gesture-pairs
+      while(1)
+      {
+        my $found = m/^(p\d+),im(\d+);(.+)$/;
+
+        if(!$found)
+        {
+          last;
+        }
+
+        print "$1\n";
+        print "$2\n";
+        print "$3\n";
+
+        # Store unprocessed rest
+        $_ = $3;
+      }
+    }
   }
 
 
