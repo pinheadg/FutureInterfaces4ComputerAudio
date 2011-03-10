@@ -5,8 +5,6 @@
 use warnings;
 use strict;
 
-use Data::Dumper;
-
 # Decoder of gesture interface expertise
 my @gesture_expertise =
 (
@@ -170,6 +168,33 @@ foreach(@ARGV)
     or die "Could not close file\n";
 }
 
+print "\n\n\n\n";
+
 # Print report
-print Dumper(\%fg_acc);
+
+print "Preferred gestures:\n\n";
+
+foreach my $function (keys(%fg_acc))
+{
+  my %rev_index = ();
+
+  # Print function name
+  print "Function: " . $functions{$function} . "\n";
+
+  my @gestures_chosen = $fg_acc{$function};
+
+  for(my $i = 0; $i < scalar(@gesture_name); $i++)
+  {
+    my $gesture = $gesture_name[$i];
+    my $gesture_chosen = $gestures_chosen[0][$i];
+
+    # Eleminate zero times chosen gestures
+    if($gesture_chosen > 0)
+    {
+      print "$gesture_chosen: $gesture\n";
+    }
+  }
+
+  print "\n";
+}
 
