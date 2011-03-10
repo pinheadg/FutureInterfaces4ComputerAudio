@@ -5,6 +5,17 @@
 use warnings;
 use strict;
 
+# Decoder of gesture interface expertise
+my @gesture_expertise =
+(
+  "illegal",
+  "use_cellphone",
+  "use_audioplayer",
+  "use_tablet",
+  "use_computer",
+  "illegal"
+);
+
 # Decoder of gesture names
 my @gesture_name =
 (
