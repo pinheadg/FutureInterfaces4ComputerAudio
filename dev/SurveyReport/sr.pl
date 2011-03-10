@@ -5,6 +5,8 @@
 use warnings;
 use strict;
 
+use Data::Dumper;
+
 # Decoder of gesture interface expertise
 my @gesture_expertise =
 (
@@ -96,6 +98,25 @@ if(scalar(@ARGV) == 0)
   die "Usage: sr.pl file1 file2 ... filen\n";
 }
 
+# Data accumulators
+my $persons = scalar(@ARGV);
+my %gestexp_acc;
+my %audprodexp_acc;
+my %age_acc;
+
+# Initialize function-gesture accumulator
+my %fg_acc;
+
+foreach my $k (keys(%functions))
+{
+  for(my $i = 0; $i < scalar(@gesture_name); $i++)
+  {
+    push(@{$fg_acc{$k}}, 0);
+  }
+}
+
+
+
 # For every file specified ...
 foreach(@ARGV)
 {
@@ -132,9 +153,11 @@ foreach(@ARGV)
           last;
         }
 
-        print "$1\n";
-        print "$2\n";
-        print "$3\n";
+        # Store results
+        my $function_index = $1;
+        my $gesture_index = $2;
+
+        @{$fg_acc{$function_index}}[$gesture_index]++;
 
         # Store unprocessed rest
         $_ = $3;
@@ -146,4 +169,7 @@ foreach(@ARGV)
   close(EMAIL)
     or die "Could not close file\n";
 }
+
+# Print report
+print Dumper(\%fg_acc);
 
