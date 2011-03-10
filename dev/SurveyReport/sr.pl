@@ -29,5 +29,20 @@ if(scalar(@ARGV) == 0)
 foreach(@ARGV)
 {
   print $_ . "\n";
+
+  open(EMAIL, "<$_")
+    or die "Could not open file " . $_ . "\n";
+
+  # Process lines
+  while(<EMAIL>)
+  {
+    chomp;
+
+    print $_ . "\n";
+  }
+
+
+  close(EMAIL)
+    or die "Could not close file\n";
 }
 
