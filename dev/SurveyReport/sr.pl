@@ -11,3 +11,9 @@ if(scalar(@ARGV) == 0)
   die "Usage: sr.pl file1 file2 ... filen\n";
 }
 
+# For every file specified ...
+foreach(@ARGV)
+{
+  print $_ . "\n";
+}
+
