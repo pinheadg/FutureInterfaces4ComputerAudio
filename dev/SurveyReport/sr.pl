@@ -63,7 +63,7 @@ my @gesture_name =
 
 # Decoder of functions
 my %functions =
-{
+(
   "p1"  => "Go one bar forward",
   "p2"  => "Go one bar backward",
   "p3"  => "Jump to beginning",
@@ -86,7 +86,7 @@ my %functions =
   "p20" => "Select all",
   "p21" => "Increase value of a control",
   "p22" => "Decrease value of a control"
-};
+);
 
 
 
