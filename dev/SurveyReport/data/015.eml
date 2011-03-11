@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12e9d8cdc0a216a4
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.109.5 with SMTP id h5cs65741ebp;
+        Wed, 9 Mar 2011 18:16:19 -0800 (PST)
+Received: by 10.213.100.65 with SMTP id x1mr88063ebn.78.1299723379123;
+        Wed, 09 Mar 2011 18:16:19 -0800 (PST)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id w16si5731716eei.91.2011.03.09.18.16.18
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Wed, 09 Mar 2011 18:16:18 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1PxVQH-0001nq-Md; Thu, 10 Mar 2011 03:16:17 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1PxVQE-0001nV-O8; Thu, 10 Mar 2011 03:16:17 +0100
+Date: Thu, 10 Mar 2011 03:16:14 +0100
+Message-Id: <E1PxVQE-0001nV-O8@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesture-Survey
+From: - <jalaha@www23.your-server.de>
+
+#en#1#2,3
+#2#
+#3#4
+#4#
+#5#2
+#6#3
+#7#p22,im3;p15,im5;p2,im2;p21,im26;p18,im10;p12,im6;p8,im17;p3,im29;p11,im24;p7,im18;p16,im13;p20,im12;p10,im1;p14,im10;p6,im18;p19,im22;p4,im30;p5,im17;p1,im4;p9,im16;p13,im24;p17,im6;
+#8#
+#9#
+

@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12e9ab26360bc3a2
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.109.5 with SMTP id h5cs51774ebp;
+        Wed, 9 Mar 2011 04:58:26 -0800 (PST)
+Received: by 10.213.112.196 with SMTP id x4mr1841006ebp.21.1299675506346;
+        Wed, 09 Mar 2011 04:58:26 -0800 (PST)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id b15si4230565eei.27.2011.03.09.04.58.25
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Wed, 09 Mar 2011 04:58:25 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1PxIy8-0000og-Vj; Wed, 09 Mar 2011 13:58:24 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1PxIy8-0000od-TK; Wed, 09 Mar 2011 13:58:24 +0100
+Date: Wed, 09 Mar 2011 13:58:24 +0100
+Message-Id: <E1PxIy8-0000od-TK@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesten-Survey
+From: - <jalaha@www23.your-server.de>
+
+#1#4
+#2#
+#3#1
+#4#
+#5#2
+#6#1
+#7#p4,im9;p16,im25;p14,im22;p12,im20;p19,im30;p2,im7;p18,im29;p1,im19;p10,im6;p22,im25;p21,im24;p15,im5;p11,im27;p7,im18;p9,im13;p3,im21;p20,im25;p8,im17;p17,im12;
+#8#Das Symbol Zeile1 Spalte2 ist doppelt (Zeile3 Spalte4). Es sollte wahrscheinlich genau spiegelverkehrt sein. So habe ich für \'ans Ende springen\' und das Equivalent zwar jetzt das gleiche Symbol ausgewählt, meine es aber gerade spiegelverkehrt.
+#9#
+
