@@ -132,19 +132,23 @@ foreach(@ARGV)
 
     print $_ . "\n";
 
-    if(m/#1#([\d,]+)/)
+    if(m/#1#([\d,]+)?/)
     {
       my $gie = $1;
       print "Gestural interface experience: $gie\n";
 
       # Store language information
-      if(m/^en#1#/)
+      if(m/^#en#1#/)
       {
         $lang_acc{"en"}++;
       }
       elsif(m/^#1#/)
       {
         $lang_acc{"de"}++;
+      }
+      else
+      {
+        print "Strange answer!\n";
       }
     }
     elsif(m/^#7#(.+)$/)
