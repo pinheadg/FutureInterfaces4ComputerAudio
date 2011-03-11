@@ -217,6 +217,10 @@ foreach(@ARGV)
         $_ = $3;
       }
     }
+    elsif(m/^#9#/)
+    {
+      # Nothing here, just a strange paragraph
+    }
     else
     {
       print STDERR "Strange line: $_\n";
