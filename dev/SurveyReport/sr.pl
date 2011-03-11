@@ -13,7 +13,6 @@ my @gesture_expertise =
   "use_touch_audioplayer",
   "use_touch_tablet",
   "use_touch_software",
-  "illegal"
 );
 
 # Decoder of audio production expertise
@@ -24,7 +23,7 @@ my @audioproduction_expertise =
   "student_media",
   "producer_professional",
   "producer_hobby",
-  "illegal"
+  "other"
 );
 
 # Decoder of gender
@@ -109,6 +108,11 @@ foreach(@gesture_expertise)
   push(@gestexp_acc, 0);
 }
 
+foreach(@audioproduction_expertise)
+{
+  push(@audprodexp_acc, 0);
+}
+
 # Initialize function-gesture accumulator
 my %fg_acc;
 
@@ -134,9 +138,14 @@ foreach(@ARGV)
   # Process lines
   while(<EMAIL>)
   {
+    print $_;
+
     chomp;
 
-    print $_ . "\n";
+    if(!m/^#/)
+    {
+      next;
+    }
 
     if(m/#1#([\d,]+)?/)
     {
@@ -161,6 +170,10 @@ foreach(@ARGV)
       {
         print "Strange answer!\n";
       }
+    }
+    elsif(m/^#3#(\d)/)
+    {
+      $audprodexp_acc[$1]++;
     }
     elsif(m/^#7#(.+)$/)
     {
@@ -187,6 +200,10 @@ foreach(@ARGV)
         $_ = $3;
       }
     }
+    else
+    {
+      print STDERR "Strange line: $_\n";
+    }
   }
 
 
@@ -210,11 +227,22 @@ print "$lang_en took the English version.\n";
 print "$lang_de took the German version.\n";
 print "\n";
 
-for(my $i = 1; $i < scalar(@gestexp_acc)-1; $i++)
+for(my $i = 1; $i < scalar(@gestexp_acc); $i++)
 {
   my $gestexp = $gestexp_acc[$i];
 
-  print "$gestexp participants have experience $gesture_expertise[$i].\n";
+  print "$gestexp participants have gesture expertise " .
+        "$gesture_expertise[$i].\n";
+}
+
+print "\n";
+
+for(my $i = 1; $i < scalar(@audprodexp_acc); $i++)
+{
+  my $audprodexp = $audprodexp_acc[$i];
+
+  print "$audprodexp participants have audio production expertise " .
+        "$audioproduction_expertise[$i].\n";
 }
 
 print "\n";
