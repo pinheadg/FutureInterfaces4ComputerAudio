@@ -125,7 +125,7 @@ foreach my $k (keys(%functions))
 # For every file specified ...
 foreach(@ARGV)
 {
-  print $_ . "\n";
+#  print $_ . "\n";
 
   open(EMAIL, "<$_")
     or die "Could not open file " . $_ . "\n";
@@ -134,7 +134,7 @@ foreach(@ARGV)
   # Process lines
   while(<EMAIL>)
   {
-    print $_;
+#    print $_;
 
     chomp;
 
