@@ -134,6 +134,9 @@ foreach(@ARGV)
 
     if(m/#1#([\d,]+)/)
     {
+      my $gie = $1;
+      print "Gestural interface experience: $gie\n";
+
       # Store language information
       if(m/^en#1#/)
       {
@@ -143,9 +146,6 @@ foreach(@ARGV)
       {
         $lang_acc{"de"}++;
       }
-
-      my $gie = $1;
-      print "Gestural interface experience: $gie\n";
     }
     elsif(m/^#7#(.+)$/)
     {
