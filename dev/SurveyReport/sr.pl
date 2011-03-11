@@ -9,10 +9,10 @@ use strict;
 my @gesture_expertise =
 (
   "illegal",
-  "use_cellphone",
-  "use_audioplayer",
-  "use_tablet",
-  "use_computer",
+  "use_touch_cellphone",
+  "use_touch_audioplayer",
+  "use_touch_tablet",
+  "use_touch_software",
   "illegal"
 );
 
@@ -103,6 +103,12 @@ my @gestexp_acc;
 my @audprodexp_acc;
 my @age_acc;
 
+# Initialize accumulators
+foreach(@gesture_expertise)
+{
+  push(@gestexp_acc, 0);
+}
+
 # Initialize function-gesture accumulator
 my %fg_acc;
 
@@ -134,8 +140,13 @@ foreach(@ARGV)
 
     if(m/#1#([\d,]+)?/)
     {
-      my $gie = $1;
-      print "Gestural interface experience: $gie\n";
+      if($1)
+      {
+        foreach my $d (split(/\,/, $1))
+        {
+            $gestexp_acc[$d]++;
+        }
+      }
 
       # Store language information
       if(m/^#en#1#/)
@@ -196,6 +207,15 @@ my $lang_en = $lang_acc{"en"};
 my $lang_de = $lang_acc{"de"};
 print "$lang_en took the English version.\n";
 print "$lang_de took the German version.\n";
+print "\n";
+
+for(my $i = 1; $i < scalar(@gestexp_acc)-1; $i++)
+{
+  my $gestexp = $gestexp_acc[$i];
+
+  print "$gestexp participants have experience $gesture_expertise[$i].\n";
+}
+
 print "\n";
 
 print "Preferred gestures:\n\n";
