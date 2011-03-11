@@ -12,7 +12,7 @@ my @gesture_expertise =
   "use_touch_cellphone",
   "use_touch_audioplayer",
   "use_touch_tablet",
-  "use_touch_software",
+  "use_touch_software"
 );
 
 # Decoder of audio production expertise
@@ -31,8 +31,7 @@ my @gender =
 (
   "illegal",
   "female",
-  "male",
-  "illegal"
+  "male"
 );
 
 # Decoder of age
@@ -43,8 +42,7 @@ my @age =
   "26 to 35",
   "36 to 45",
   "46 to 55",
-  "56 or more",
-  "illegal"
+  "56 or more"
 );
 
 # Decoder of gesture names
@@ -56,8 +54,7 @@ my @gesture_name =
   "left-up", "letter", "multi-pinch-horizontal", "multi-pinch-vertical", "multi-rotate-clockwise",
   "multi-rotate-counterclockwise", "multi-spread-horizontal", "multi-spread-vertical", "right", "right-down",
   "right-left", "right-left-right", "right-up", "rotate-clockwise", "rotate-counterclockwise",
-  "up", "up-down", "up-down-up", "up-left", "up-right",
-  "illegal"
+  "up", "up-down", "up-down-up", "up-left", "up-right"
 );
 
 # Decoder of functions
@@ -102,18 +99,14 @@ my @gestexp_acc;
 my @gestexp_comments;
 my @audprodexp_acc;
 my @audprodexp_comments;
+my @gender_acc;
 my @age_acc;
 
 # Initialize accumulators
-foreach(@gesture_expertise)
-{
-  push(@gestexp_acc, 0);
-}
-
-foreach(@audioproduction_expertise)
-{
-  push(@audprodexp_acc, 0);
-}
+foreach(@gesture_expertise) { push(@gestexp_acc, 0); }
+foreach(@audioproduction_expertise) { push(@audprodexp_acc, 0); }
+foreach(@gender) { push(@gender_acc, 0); }
+foreach(@age) { push(@age_acc, 0); }
 
 # Initialize function-gesture accumulator
 my %fg_acc;
@@ -190,6 +183,14 @@ foreach(@ARGV)
       {
         push(@audprodexp_comments, $1);
       }
+    }
+    elsif(m/^#5#(\d)/)
+    {
+      $gender_acc[$1]++;
+    }
+    elsif(m/^#6#(\d)/)
+    {
+      $age_acc[$1]++;
     }
     elsif(m/^#7#(.+)$/)
     {
@@ -286,6 +287,22 @@ if(scalar(@audprodexp_comments) > 0)
   print "----\n";
   print "\n";
 }
+
+for(my $i = 1; $i < scalar(@gender_acc); $i++)
+{
+  print "$gender_acc[$i] participants are " .
+        "$gender[$i].\n";
+}
+
+print "\n";
+
+for(my $i = 1; $i < scalar(@age_acc); $i++)
+{
+  print "$age_acc[$i] participants are in the age group " .
+        "$age[$i].\n";
+}
+
+print "\n";
 
 print "Preferred gestures:\n\n";
 
