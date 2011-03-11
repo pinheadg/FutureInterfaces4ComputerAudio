@@ -200,6 +200,7 @@ print "\n\n\n\n";
 
 print "Survey report:\n";
 print "--------------\n";
+print "\n";
 
 print "$persons persons completed the survey.\n\n";
 
