@@ -101,6 +101,7 @@ my @audprodexp_acc;
 my @audprodexp_comments;
 my @gender_acc;
 my @age_acc;
+my @comments;
 
 # Initialize accumulators
 foreach(@gesture_expertise) { push(@gestexp_acc, 0); }
@@ -215,6 +216,13 @@ foreach(@ARGV)
 
         # Store unprocessed rest
         $_ = $3;
+      }
+    }
+    elsif(m/^#8#(.+)?/)
+    {
+      if($1)
+      {
+        push(@comments, $1);
       }
     }
     elsif(m/^#9#/)
@@ -333,4 +341,19 @@ foreach my $function (keys(%fg_acc))
 
   print "\n";
 }
+
+print "\n";
+
+if(scalar(@comments) > 0)
+{
+  print "Miscellaneous comments follow:\n";
+  foreach my $comment (@comments)
+  {
+    print " * $comment\n";
+  }
+
+  print "----\n";
+  print "\n";
+}
+
 
