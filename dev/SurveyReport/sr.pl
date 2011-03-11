@@ -99,7 +99,9 @@ if(scalar(@ARGV) == 0)
 my $persons = scalar(@ARGV);
 my %lang_acc = ( "en" => 0, "de" => 0 );
 my @gestexp_acc;
+my @gestexp_comments;
 my @audprodexp_acc;
+my @audprodexp_comments;
 my @age_acc;
 
 # Initialize accumulators
@@ -171,6 +173,10 @@ foreach(@ARGV)
         print "Strange answer!\n";
       }
     }
+    elsif(m/^#2#(.+)/)
+    {
+      push(@gestexp_comments);
+    }
     elsif(m/^#3#(\d)/)
     {
       $audprodexp_acc[$1]++;
@@ -235,6 +241,15 @@ for(my $i = 1; $i < scalar(@gestexp_acc); $i++)
         "$gesture_expertise[$i].\n";
 }
 
+print "\n";
+
+print "Comments follow:\n";
+foreach my $comment (@gestexp_comments)
+{
+  print " * $comment\n";
+}
+
+print "----\n";
 print "\n";
 
 for(my $i = 1; $i < scalar(@audprodexp_acc); $i++)
