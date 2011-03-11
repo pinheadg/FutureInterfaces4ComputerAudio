@@ -243,14 +243,17 @@ for(my $i = 1; $i < scalar(@gestexp_acc); $i++)
 
 print "\n";
 
-print "Comments follow:\n";
-foreach my $comment (@gestexp_comments)
+if(scalar(@gestexp_comments) > 0)
 {
-  print " * $comment\n";
-}
+  print "Comments follow:\n";
+  foreach my $comment (@gestexp_comments)
+  {
+    print " * $comment\n";
+  }
 
-print "----\n";
-print "\n";
+  print "----\n";
+  print "\n";
+}
 
 for(my $i = 1; $i < scalar(@audprodexp_acc); $i++)
 {
