@@ -173,13 +173,23 @@ foreach(@ARGV)
         print "Strange answer!\n";
       }
     }
-    elsif(m/^#2#(.+)/)
+    elsif(m/^#2#(.+)?/)
     {
-      push(@gestexp_comments);
+      if($1)
+      {
+        push(@gestexp_comments, $1);
+      }
     }
     elsif(m/^#3#(\d)/)
     {
       $audprodexp_acc[$1]++;
+    }
+    elsif(m/^#4#(.+)?/)
+    {
+      if($1)
+      {
+        push(@audprodexp_comments, $1);
+      }
     }
     elsif(m/^#7#(.+)$/)
     {
@@ -264,6 +274,18 @@ for(my $i = 1; $i < scalar(@audprodexp_acc); $i++)
 }
 
 print "\n";
+
+if(scalar(@audprodexp_comments) > 0)
+{
+  print "Comments follow:\n";
+  foreach my $comment (@audprodexp_comments)
+  {
+    print " * $comment\n";
+  }
+
+  print "----\n";
+  print "\n";
+}
 
 print "Preferred gestures:\n\n";
 
