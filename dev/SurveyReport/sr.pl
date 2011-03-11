@@ -98,9 +98,10 @@ if(scalar(@ARGV) == 0)
 
 # Data accumulators
 my $persons = scalar(@ARGV);
-my %gestexp_acc;
-my %audprodexp_acc;
-my %age_acc;
+my %lang_acc = ( "en" => 0, "de" => 0 );
+my @gestexp_acc;
+my @audprodexp_acc;
+my @age_acc;
 
 # Initialize function-gesture accumulator
 my %fg_acc;
@@ -131,8 +132,18 @@ foreach(@ARGV)
 
     print $_ . "\n";
 
-    if(m/^#1#([\d,])+/)
+    if(m/#1#([\d,]+)/)
     {
+      # Store language information
+      if(m/^en#1#/)
+      {
+        $lang_acc{"en"}++;
+      }
+      elsif(m/^#1#/)
+      {
+        $lang_acc{"de"}++;
+      }
+
       my $gie = $1;
       print "Gestural interface experience: $gie\n";
     }
@@ -171,6 +182,17 @@ foreach(@ARGV)
 print "\n\n\n\n";
 
 # Print report
+
+print "Survey report:\n";
+print "--------------\n";
+
+print "$persons persons completed the survey.\n\n";
+
+my $lang_en = $lang_acc{"en"};
+my $lang_de = $lang_acc{"de"};
+print "$lang_en took the English version.\n";
+print "$lang_de took the German version.\n";
+print "\n";
 
 print "Preferred gestures:\n\n";
 
