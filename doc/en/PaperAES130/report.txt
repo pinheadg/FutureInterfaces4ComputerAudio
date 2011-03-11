@@ -1,0 +1,260 @@
+
+
+
+
+Survey report:
+--------------
+
+18 persons completed the survey.
+
+4 took the English version.
+14 took the German version.
+
+8 participants have gesture expertise use_touch_cellphone.
+8 participants have gesture expertise use_touch_audioplayer.
+3 participants have gesture expertise use_touch_tablet.
+7 participants have gesture expertise use_touch_software.
+
+9 participants have audio production expertise student_audio.
+0 participants have audio production expertise student_media.
+3 participants have audio production expertise producer_professional.
+4 participants have audio production expertise producer_hobby.
+2 participants have audio production expertise other.
+
+Comments follow:
+ * Mehrfachauswahl?Inputfeld zu kurz. Ich b
+ * Mehrfachauswahl?Inputfeld zu kurz. Ich b
+----
+
+4 participants are female.
+14 participants are male.
+
+9 participants are in the age group 25 or less.
+6 participants are in the age group 26 to 35.
+3 participants are in the age group 36 to 45.
+0 participants are in the age group 46 to 55.
+0 participants are in the age group 56 or more.
+
+Preferred gestures:
+
+Function: Fit selected track to window
+1: down-up
+2: left-right-left
+1: letter
+2: multi-pinch-vertical
+1: multi-rotate-clockwise
+3: multi-spread-horizontal
+1: right
+
+Function: Toggle metronome
+2: digit
+1: down-right
+1: down-up
+6: letter
+1: up-left
+
+Function: Fit all tracks to window: vertical
+1: down-up
+3: down-up-down
+1: letter
+2: multi-pinch-vertical
+6: multi-spread-vertical
+1: up-down-up
+
+Function: Glue selected regions together
+1: left-right
+8: multi-pinch-horizontal
+2: multi-pinch-vertical
+1: multi-rotate-clockwise
+1: rotate-counterclockwise
+1: up
+
+Function: Select all
+1: digit
+5: letter
+1: multi-pinch-horizontal
+1: right-left-right
+6: rotate-clockwise
+3: rotate-counterclockwise
+
+Function: Copy selected region
+1: down
+1: left-up
+2: letter
+1: multi-pinch-horizontal
+2: right-down
+2: rotate-clockwise
+2: up-down
+1: up-down-up
+2: up-right
+
+Function: Cut selected region
+1: digit
+1: down-up-down
+1: left-right
+1: left-up
+4: letter
+1: multi-pinch-horizontal
+1: multi-spread-horizontal
+1: multi-spread-vertical
+1: right-up
+1: up
+1: up-down
+
+Function: Duplicate selected region
+2: down-right
+1: down-up
+2: letter
+1: multi-rotate-clockwise
+2: right-down
+2: rotate-clockwise
+1: rotate-counterclockwise
+3: up-down
+1: up-down-up
+1: up-right
+
+Function: Decrease value of a control
+8: down
+2: multi-rotate-counterclockwise
+1: right-down
+4: rotate-counterclockwise
+
+Function: Fit selected region to window
+1: down-up
+1: left-right-left
+1: letter
+1: multi-pinch-vertical
+4: multi-spread-horizontal
+3: multi-spread-vertical
+1: right-left-right
+1: right-up
+1: up-down-up
+
+Function: Delete selected region
+1: digit
+2: down
+1: down-right
+1: left
+3: left-right-left
+1: letter
+1: multi-pinch-horizontal
+1: multi-spread-horizontal
+1: right-down
+1: right-left-right
+1: rotate-clockwise
+
+Function: Redo action undone last
+1: down-right
+2: left-right
+1: left-right-left
+2: left-up
+2: letter
+2: multi-rotate-clockwise
+1: right
+1: right-left-right
+3: rotate-clockwise
+1: rotate-counterclockwise
+1: up-down
+1: up-right
+
+Function: Go one bar forward
+1: down-right
+10: right
+1: right-down
+1: right-left
+2: rotate-counterclockwise
+2: up-right
+
+Function: Jump to end
+1: down
+4: left-right
+2: right
+6: right-down
+1: right-left-right
+1: rotate-clockwise
+2: up-right
+
+Function: Fit all tracks to window: horizontal
+1: left-right
+1: left-right-left
+1: letter
+2: multi-pinch-horizontal
+6: multi-spread-horizontal
+2: right-left-right
+1: rotate-counterclockwise
+
+Function: Go one bar backward
+2: down-left
+9: left
+1: left-down
+1: left-right
+2: rotate-clockwise
+3: up-left
+
+Function: Undo last action
+1: digit
+2: left
+4: left-right-left
+2: letter
+1: multi-rotate-counterclockwise
+2: rotate-clockwise
+3: rotate-counterclockwise
+2: up-left
+1: up-right
+
+Function: Increase value of a control
+1: left-up
+2: multi-rotate-clockwise
+4: rotate-clockwise
+9: up
+
+Function: Split selected region
+2: down
+3: down-up
+1: letter
+6: multi-spread-horizontal
+2: multi-spread-vertical
+1: right-left
+1: up-down
+
+Function: Jump to beginning
+2: down-left
+5: left
+1: left-right-left
+1: left-up
+1: multi-rotate-counterclockwise
+3: right-left
+1: up
+4: up-left
+
+Function: Paste previously cut or copied region
+1: digit
+3: down
+3: down-right
+1: down-up
+1: down-up-down
+1: left-down
+1: letter
+1: multi-rotate-counterclockwise
+4: right-down
+
+Function: Recall zoom preset
+2: digit
+1: down-left
+1: left-right
+2: letter
+1: multi-pinch-horizontal
+1: multi-rotate-counterclockwise
+3: multi-spread-vertical
+1: rotate-clockwise
+1: up-down-up
+
+
+Miscellaneous comments follow:
+ * nette Ideen, ich nutze nur im Moment keinerlei gestenbasierte Interface, könnte mir aber schon vorstellen dies für die audiobearbeitung zu tun
+ * ein pfeil ist leider doppelt, dafür fehlt einer: erste zeile zweites symbol ist identisch mit fünfte zeile viertes symbol.
+ * siehe email..
+ * Das Symbol Zeile1 Spalte2 ist doppelt (Zeile3 Spalte4). Es sollte wahrscheinlich genau spiegelverkehrt sein. So habe ich für \'ans Ende springen\' und das Equivalent zwar jetzt das gleiche Symbol ausgewählt, meine es aber gerade spiegelverkehrt.
+ * Ich vermisse so etwas wie \"Double-Tap\" als Option, zwei mal antippen um z.B. \"Einzelnen Track ins Fenster einpassen\". In der zweiten Symbolreihe steht zweimal die gleiche Auswahlmöglichkeit (das 2. und das vorletzte Symbol der Reihe) zur Verfügung. \"Ein Takt zurück\" sollte bei mir demnach den Startpunkt von links nach rechts und wieder zurück haben.
+----
+
