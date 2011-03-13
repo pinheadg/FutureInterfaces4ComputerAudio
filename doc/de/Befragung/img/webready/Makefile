@@ -28,3 +28,5 @@ all: diag-down-left.png diag-down-left-up-right.png \
 	right-up.png rotate-clockwise.png rotate-counterclockwise.png \
 	up-down.png up-down-up.png up-left.png up.png up-right.png
 
+clean:
+	rm -f *.png
