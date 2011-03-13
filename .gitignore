@@ -5,6 +5,7 @@
 *.toc
 doc/de/Ausarbeitung/Ausarbeitung.pdf
 doc/de/Befragung/Befragung.pdf
+doc/de/Befragung/img/webready/*.png
 doc/en/PaperAES130/GesturesInDAW.pdf
 Thumbs.db
 *.bbl
