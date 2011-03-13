@@ -1,6 +1,7 @@
 \documentclass[mathptmx]{aes130}
 
 \usepackage{array}
+\usepackage{rotating}
 
 \authors{Wincent Balin\aff{1} and
          J\"{o}rn Loviscach\aff{2}}
@@ -43,6 +44,136 @@ and other nonclassical input devices.
 
 % Include graphics
 \newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{../../de/Befragung/img/#1}}
+\newcommand{\sixthpic}[1][]{\includegraphics[scale=0.17]{../../de/Befragung/img/#1}}
+
+% Make vertical cells
+\newcolumntype{v}[1]{%
+  >{\begin{turn}{90}\begin{minipage}{8em}\raggedright\hspace{0pt}}l%
+  <{\end{minipage}\end{turn}}|%
+}
+
+\begin{table*}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+
+ & \multicolumn{1}{v|}{Go 1 bar forward}
+ & \multicolumn{1}{v|}{Go 1 bar back}
+ & \multicolumn{1}{v|}{Jump to beginning}
+ & \multicolumn{1}{v|}{Jump to end}
+ & \multicolumn{1}{v|}{Toggle metronome}
+ & \multicolumn{1}{v|}{Select all}
+ & \multicolumn{1}{v|}{Cut region}
+ & \multicolumn{1}{v|}{Copy region}
+ & \multicolumn{1}{v|}{Paste region}
+ & \multicolumn{1}{v|}{Duplicate region}
+ & \multicolumn{1}{v|}{Delete region}
+ & \multicolumn{1}{v|}{Split region}
+ & \multicolumn{1}{v|}{Glue regions} 
+ & \multicolumn{1}{v|}{Undo action}
+ & \multicolumn{1}{v|}{Redo action}
+ & \multicolumn{1}{v|}{Increase value}
+ & \multicolumn{1}{v|}{Decrease value}
+ & \multicolumn{1}{v|}{Fit selected track}
+ & \multicolumn{1}{v|}{Fit selected region}
+ & \multicolumn{1}{v|}{Fit all tracks: vert.}
+ & \multicolumn{1}{v|}{Fit all tracks: horiz.}
+ & \multicolumn{1}{v|}{Recall zoom preset} \\ \hline \hline
+
+\sixthpic[right]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[right-up]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[right-down]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[right-left]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[right-left-right]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[left]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[left-up]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[left-down]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[left-right]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[left-right-left]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[up]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[up-left]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[up-right]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[up-down]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[up-down-up]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[down]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[down-left]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[down-right]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[down-up]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[down-up-down]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[rotate-clockwise]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[rotate-counterclockwise]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[digit-1]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[letter-a]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-pinch-horizontal]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-pinch-vertical]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-spread-horizontal]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-spread-vertical]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-rotate-clockwise]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+\sixthpic[multi-rotate-counterclockwise]
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
+
+
+\end{tabular}
+\caption{Results of the preliminary survey}
+\end{table*}
+
+
 
 
 % Make column captions smaller
