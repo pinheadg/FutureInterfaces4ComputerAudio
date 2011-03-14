@@ -1,11 +1,10 @@
-%%% Modification of BibTeX style file doc/en/PaperAES130/plain.bst
+%%% Modification of BibTeX style file plain.bst
 %%% ... by urlbst, version 0.6-5 (marked with "% urlbst")
 %%% See <http://purl.org/nxg/dist/urlbst>
 %%% Added webpage entry type, and url and lastchecked fields.
 %%% Added eprint support.
 %%% Added DOI support.
 %%% Added PUBMED support.
-%%% Added hyperref support.
 %%% Original headers follow...
 
 % BibTeX standard bibliography style `plain'
@@ -67,7 +66,7 @@ FUNCTION {init.urlbst.variables}
   #1 'addeprints :=         % 0=no eprints; 1=include eprints
   #1 'adddoiresolver :=     % 0=no DOI resolver; 1=include it
   #1 'addpubmedresolver :=     % 0=no PUBMED resolver; 1=include it
-  #2 'hrefform :=           % 0=no crossrefs; 1=hypertex xrefs; 2=hyperref refs
+  #0 'hrefform :=           % 0=no crossrefs; 1=hypertex xrefs; 2=hyperref refs
   #0 'inlinelinks :=        % 0=URLs explicit; 1=URLs attached to titles
 
   % String constants, which you _might_ want to tweak.
