@@ -91,8 +91,37 @@ concludes this paper.
 
 \section{Related work} \label{sec:RelatedWork}
 
-The main concepts of 
+The differences between the mouse and the multi-touch interface, from which the differences betweeen
+the mouse gestures and multi-touch gestures will be expanded, were introduced in \cite{Buxton:1985:ITT:325334.325239}.
+A graphic similarity between mouse gestures and marking menus, as well several statements related
+to gestures, were demonstrated in \cite{Kurtenbach:1993:LEP:164632.164977}.
+The differences between mouse and multi-touch screen, contrary to differences between mouse input
+and touch tablet, as it was in \cite{Kurtenbach:1993:LEP:164632.164977}, are discussed in
+\cite{Forlines:2007:DVM:1240624.1240726}.
 
+The taxonomy in \cite{ecs11149} helps to classify the groups of gestures observed in this paper.
+A small taxonomy for multi-touch gestures is also provided in \cite{Wigdor:2010:ANU:1842993.1842997},
+but it is directed towards surface input devices. Another taxonomy is presented 
+n \cite{Wobbrock:2009:UGS:1518701.1518866}; also, this work has many useful observations,
+some of which were seconded in the results of the survey.
+
+When choosing gesture candidates for the survey, the paper \cite{Naumann:2007:IUU:1784197.1784212}
+explains the concept of an ``intuitive'' gesture in a concise manner. The document \cite{Lee:2009:EEP:1520340.1520667}
+helps to counter the overuse of gestures with inertial behaviour, as well as distinguishing between
+the needs of mouse gestures and touch gestures. Another work that cautions against improvident use
+of gestures is \cite{Norman:2010:GIS:1836216.1836228}.
+
+The methodology of designing a gestural language using brainstorming is explained in
+\cite{Akers:2007:ODM:1240866.1240868}. In a similar venue lies \cite{SalatBottomUpApproach}, which explains
+the bottom-up approach to software design.
+
+A design both of a gesture language and of a software package, which connects the gestures
+as a replacement or an addition to applications written in Java programming language and using
+its Swing toolkit, is presented in \cite{Appert:2009:USC:1518701.1519052}. The document also
+provides a comparison between mouse gestures and keyboard shortcuts.
+
+The paper \cite{Kammer:2010:TFM:1936652.1936662} describes formal description for multi-touch gestures,
+which is also capable of producing formal descriptions of single-touch as well as mouse gestures.
 
 \section{Selection of editing tasks} \label{sec:EditingTasks}
 
@@ -100,15 +129,18 @@ Audio functions
 
 \section{Selection of gestures} \label{sec:Gestures}
 
+% Include graphics
+\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{../../de/Befragung/img/#1}}
+\newcommand{\sixthpic}[1][]{\includegraphics[scale=0.17]{../../de/Befragung/img/#1}}
+
+
 StrokeIt
 
 
 \section{Survey} \label{sec:Survey}
 
-% Include graphics
-\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{../../de/Befragung/img/#1}}
-\newcommand{\sixthpic}[1][]{\includegraphics[scale=0.17]{../../de/Befragung/img/#1}}
 
+\subsection{Results} \label{sec:SurveyResults}
 
 \begin{table} \label{tab:PrelimSurveyRateOfChoices}
 \begin{center}
@@ -260,7 +292,7 @@ StrokeIt
 \end{table*}
 
 
-
+\subsection{Observations} \label{sec:SurveyObservations}
 
 
 \begin{table} \label{tab:PrelimSurveyCumulativePopularity}
@@ -326,6 +358,10 @@ Multi-touch rotate gestures         &  42 \\ \hline
 %Even in the recently unveiled Garageband for iPad DAW the playback is controlled by three
 %buttons\cite{GaragebandIpadDemo} (Jump to the beginning/Stop, Play/Pause and Record),
 %as in spite of running on a multi-touch enabled platform. 
+
+Accelerometer used for velocity-sensitivity in Garageband for iPad\cite{GaragebandIpadDemo}.
+
+Conducting using Kinect\cite{KinectConductingGameIdea}
 
 \bibliographystyle{plain}
 \bibliography{GesturesInDAW}
