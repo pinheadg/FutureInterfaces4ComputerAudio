@@ -32,23 +32,78 @@ and other nonclassical input devices.
 
 \section{Introduction}
 
+In the last years, the concept of gesture became pervasive -- everyone in the western world either owns
+at least one electronic device with gestural interface or knows someone who does. The mentioned devices
+are most often portable. On non-portable devices, mainly personal computers (PC), the support of gestures
+only recently began to win hearts and minds, as is the case with multi-touch gestures, or has been largely neglected,
+as the situation with mouse gestures is.
+
+Despite the circumstances described, many a power user took mouse gestures to his heart. The Opera web browser
+introduced support of mouse gestures in April 2001\cite{WikipediaMouseGesture}, and this feature
+had enough appeal for it's users to be reintroduced both to Mozilla Firefox (with -- currently -- more
+than ten extensions\cite{FirefoxGestureExtensions}) and to Microsoft internet Explorer
+(for example \cite{InternetExplorerGestures}) web browsers. Autodesk Maya, a 3D modeller software,
+goes even further by using marking menus\cite{Kurtenbach:1994:ULP:259963.260376}, an input method related
+to mouse gestures, by default.
+
+But classic digital audio workstation (DAW) programs seem to shun gestures alltogether. Today,
+most of the music software with gesture support runs on Apple iOS based platforms. A good example is
+StepPolyArp\cite{StepPolyArp}, a MIDI arpeggiator software.
+An additional event therein is created by touching an empty cell in the events grid\cite{StepPolyArpManual},
+changing length of the event is done simply by dragging it, tap-and-hold and dragging afterwards is used to move the event
+and to delete the event, the user places his finger upon the event and then swipes it down (akin to swiping a bead on an abacus).
+
+Looking back to classic DAW software, there is a performance tool for Ableton Live software called Aggregat\cite{Aggregat}.
+It is still under heavy development, but on the associated web page the developers provide a demonstration video.
+Aggregat uses multi-touch capabilities at great lengths. The usual Ableton Live widgets are appropriately presented
+on a touch-sensitive table. But aside from Aggregat, neither mouse gestures nor multi-touch gestures are used
+in traditional DAW programs, and even single-touch gestures resemble nothing more than a mouse pointer.
+
+The usual workflow when editing an audio document, as this is the main purpose of classic DAW programs, means chains
+of edits. An edit means in this case the following sequence of steps:
+
+\begin{enumerate}
+\item Moving the cursor to the tool panel
+\item Choosing the needed tool (through a menu or a button widget)
+\item Moving the cursor back to the editing area
+\item Performing an action with a tool
+\item If the tool is destructive, most probably moving back to tool panel and \ldots
+\item choosing non-destructive tool
+\end{enumerate}
+
+Even without using quantification methods, such as GOMS\cite{Card:1983:PHI:578027}, it is evident
+that the list above lasts much longer than a single gesture. In case the user tries to remedy the duration
+of an edit through keyboard shortcuts, a gesture, especially on a touch screen, does not require to shift the user's
+focus, at least occasionally, from screen to keyboard and back. Also, keyboard shortcuts require some time
+and practice to become memorized. This is less true for gestures\cite{Appert:2009:USC:1518701.1519052}.
+
+To conclude, which gestures are most appropriate for which functions of DAW software, we conducted
+a survey among trained DAW users. First, we selected common DAW functions, performed repeatedly and often.
+Second, we compiled a collection of gestures and selected 30 of them to appear in the survey. Then
+we presented a bilingual survey to DAW users, who chose, which gesture does correspong to which DAW function
+the most.
+
+This paper is structured around the survey. The next section presents related approaches.
+Section~\ref{sec:EditingTasks} discusses which audio editing tasks will be taken into the survey.
+The section~\ref{sec:Gestures} describes available gestures and the process of their selection.
+The main section~\ref{sec:Survey} discusses the survey itself. Eventually, the section~\ref{sec:Conclusions}
+concludes this paper.
+
+\section{Related work} \label{sec:RelatedWork}
+
+The main concepts of 
 
 
-\section{Related work}
-
-
-
-
-\section{Audio tasks}
+\section{Selection of editing tasks} \label{sec:EditingTasks}
 
 Audio functions
 
-\section{Design principles}
+\section{Selection of gestures} \label{sec:Gestures}
 
 StrokeIt
 
 
-\section{Test survey}
+\section{Survey} \label{sec:Survey}
 
 % Include graphics
 \newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{../../de/Befragung/img/#1}}
@@ -262,13 +317,15 @@ Multi-touch rotate gestures         &  42 \\ \hline
 
 
 
-%
 
 
-\section{Survey}
+\section{Conclusions} \label{sec:Conclusions}
 
 
-\section{Conclusions}
+%It is interesting to see how persistent the usage of button widgets in DAW software became:
+%Even in the recently unveiled Garageband for iPad DAW the playback is controlled by three
+%buttons\cite{GaragebandIpadDemo} (Jump to the beginning/Stop, Play/Pause and Record),
+%as in spite of running on a multi-touch enabled platform. 
 
 \bibliographystyle{plain}
 \bibliography{GesturesInDAW}
