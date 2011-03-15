@@ -5,12 +5,12 @@
 Survey report:
 --------------
 
-11 persons completed the survey.
+12 persons completed the survey.
 
 5 took the English version.
-6 took the German version.
+7 took the German version.
 
-9 participants have gesture expertise use_touch_cellphone.
+10 participants have gesture expertise use_touch_cellphone.
 0 participants have gesture expertise use_touch_audioplayer.
 1 participants have gesture expertise use_touch_tablet.
 3 participants have gesture expertise use_touch_software.
@@ -21,7 +21,7 @@ Comments follow:
 
 6 participants have audio production expertise producer_hobby.
 1 participants have audio production expertise student_audio.
-0 participants have audio production expertise professional_part_time.
+1 participants have audio production expertise professional_part_time.
 1 participants have audio production expertise professional_full_time.
 1 participants have audio production expertise educator.
 0 participants have audio production expertise developer.
@@ -34,13 +34,13 @@ Comments follow:
 ----
 
 1 participants are female.
-10 participants are male.
+11 participants are male.
 
 1 participants are in the age group 25 or less.
 7 participants are in the age group 26 to 35.
 1 participants are in the age group 36 to 45.
 0 participants are in the age group 46 to 55.
-2 participants are in the age group 56 or more.
+3 participants are in the age group 56 or more.
 
 Preferred gestures:
 
@@ -49,6 +49,7 @@ Function: Fit selected track to window
 1: multi-pinch-horizontal
 1: tap-double
 2: multi-spread-vertical
+1: right
 1: right-down
 1: right-left
 1: up-down
@@ -61,17 +62,18 @@ Function: Toggle metronome
 1: letter
 1: tap-double
 1: multi-spread-vertical
-2: triangle
+3: triangle
 
 Function: Fit all tracks to window: vertical
 1: down
+1: sign-+
 1: letter
 2: multi-pinch-vertical
 1: multi-spread-vertical
 2: up-down
 
 Function: Glue selected regions together
-2: multi-pinch-horizontal
+3: multi-pinch-horizontal
 1: multi-pinch-vertical
 1: tap-double
 1: right-left
@@ -81,12 +83,13 @@ Function: Select all
 1: down-up
 3: sign-x
 2: tap-double
+1: right-left
 2: triangle
 
 Function: Copy selected region
 1: left-down
 1: sign-+
-2: tap-hold
+3: tap-hold
 1: tap-double
 2: rotate-clockwise
 
@@ -96,6 +99,7 @@ Function: Cut selected region
 1: letter
 1: multi-pinch-vertical
 1: tap-double
+1: multi-spread-horizontal
 1: right-left
 1: up-right
 2: triangle
@@ -105,25 +109,27 @@ Function: Duplicate selected region
 1: letter
 1: tap-double
 1: multi-spread-vertical
+1: right-up
 1: rotate-clockwise
 1: up-left
 2: triangle
 
 Function: Decrease value of a control
-1: down
+2: down
 1: down-up
 1: rotate-clockwise
 4: rotate-counterclockwise
 1: up-left
 
 Function: Fit selected region to window
+1: sign-x
 1: letter
 3: tap-double
 3: multi-spread-horizontal
 1: multi-spread-vertical
 
 Function: Delete selected region
-2: sign-x
+3: sign-x
 2: left
 2: sign-+
 1: multi-spread-horizontal
@@ -133,17 +139,18 @@ Function: Redo action undone last
 1: tap-hold
 1: right-down
 3: rotate-clockwise
+1: rotate-counterclockwise
 1: up-left
 
 Function: Go one bar forward
 1: down-right
-5: right
+6: right
 1: up-down
 
 Function: Jump to end
 1: digit
 1: down-left
-2: down-right
+3: down-right
 1: sign-+
 1: tap-hold
 1: right
@@ -160,7 +167,7 @@ Function: Fit all tracks to window: horizontal
 Function: Go one bar backward
 1: down-left
 1: down
-5: left
+6: left
 1: left-up
 1: rotate-counterclockwise
 
@@ -168,12 +175,12 @@ Function: Undo last action
 1: sign-+
 1: tap-hold
 1: right-left
-3: rotate-counterclockwise
+4: rotate-counterclockwise
 2: up-right
 
 Function: Increase value of a control
 5: rotate-clockwise
-1: up
+2: up
 1: up-down
 1: triangle
 
@@ -182,11 +189,12 @@ Function: Split selected region
 1: down-right
 2: down-up
 1: left-right
+1: multi-spread-vertical
 1: right
 1: rotate-clockwise
 
 Function: Jump to beginning
-2: down-left
+3: down-left
 1: left
 1: left-right
 1: up
@@ -195,6 +203,7 @@ Function: Jump to beginning
 Function: Paste previously cut or copied region
 1: down
 1: down-right
+1: sign-+
 1: multi-pinch-horizontal
 1: tap-hold
 2: tap-double
@@ -202,6 +211,7 @@ Function: Paste previously cut or copied region
 1: triangle
 
 Function: Recall zoom preset
+1: digit
 1: tap-hold
 2: tap-double
 1: right-left
@@ -212,5 +222,6 @@ Function: Recall zoom preset
 
 Miscellaneous comments follow:
  * Interessante Umfrage! Viel Erfolg bei der Arbeit!
+ * keine Diagonalen? Kassner ;-)
 ----
 
