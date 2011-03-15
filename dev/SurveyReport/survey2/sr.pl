@@ -25,7 +25,7 @@ my @audioproduction_expertise =
   "professional_full_time",
   "educator",
   "developer",
-  "researcher"
+  "researcher",
   "other"
 );
 
