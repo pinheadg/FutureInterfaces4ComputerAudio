@@ -89,10 +89,12 @@ The section~\ref{sec:Gestures} describes available gestures and the process of t
 The main section~\ref{sec:Survey} discusses the survey itself. Eventually, the section~\ref{sec:Conclusions}
 concludes this paper.
 
-\section{Related work} \label{sec:RelatedWork}
+\section{Related work}
 
 The differences between the mouse and the multi-touch interface, from which the differences betweeen
 the mouse gestures and multi-touch gestures will be expanded, were introduced in \cite{Buxton:1985:ITT:325334.325239}.
+Such differences consist 
+
 A graphic similarity between mouse gestures and marking menus, as well several statements related
 to gestures, were demonstrated in \cite{Kurtenbach:1993:LEP:164632.164977}.
 The differences between mouse and multi-touch screen, contrary to differences between mouse input
@@ -165,12 +167,16 @@ StrokeIt
 
 % Make vertical cells
 \newcolumntype{v}[1]{%
-  >{\begin{turn}{90}\begin{minipage}{13em}\raggedright\hspace{0pt}}l%
+  >{\begin{turn}{90}\begin{minipage}{15em}\raggedright\hspace{0pt}}l%
+  <{\end{minipage}\end{turn}}|%
+}
+\newcolumntype{w}[1]{%
+  >{\begin{turn}{90}\begin{minipage}{5em}\raggedright\hspace{0pt}}l%
   <{\end{minipage}\end{turn}}|%
 }
 
 \begin{table*} \label{tab:PrelimSurveyResults}
-\small
+\footnotesize
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
 
  & \multicolumn{1}{v|}{Go one bar forward}
@@ -195,6 +201,9 @@ StrokeIt
  & \multicolumn{1}{v|}{Fit all tracks to window: vert.}
  & \multicolumn{1}{v|}{Fit all tracks to window: horiz.}
  & \multicolumn{1}{v|}{Recall zoom preset} \\ \hline \hline
+
+\multicolumn{1}{|w|}{Number of answers}
+ & 17 & 18 & 18 & 17 & 11 & 17 & 14 & 14 & 16 & 16 & 14 & 16 & 14 & 18 & 18 & 16 & 15 & 11 & 14 & 14 & 14 & 13 \\ \hline
 
 \sixthpic[right]
  & 59 &  &  & 12 &  &  &  &  &  &  &  &  &  &  & 6 &  &  & 9 &  &  &  &  \\ \hline
@@ -285,7 +294,6 @@ StrokeIt
 
 \sixthpic[multi-rotate-counterclockwise]
  &  &  & 6 &  &  &  &  &  & 6 &  &  &  &  & 6 &  &  & 13 &  &  &  &  & 8 \\ \hline
-
 
 \end{tabular}
 \caption{Results of the preliminary survey (in \emph{per cent}, rounded)}
