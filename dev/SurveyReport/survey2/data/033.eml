@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12ece2caed4803e4
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.28.143 with SMTP id m15cs30226ebc;
+        Sat, 19 Mar 2011 05:52:38 -0700 (PDT)
+Received: by 10.14.122.205 with SMTP id t53mr398077eeh.106.1300539158407;
+        Sat, 19 Mar 2011 05:52:38 -0700 (PDT)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id u12si1751619eeh.99.2011.03.19.05.52.38
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sat, 19 Mar 2011 05:52:38 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q0ve2-00015I-0Q; Sat, 19 Mar 2011 13:52:38 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q0ve1-00015F-Uw; Sat, 19 Mar 2011 13:52:37 +0100
+Date: Sat, 19 Mar 2011 13:52:37 +0100
+Message-Id: <E1Q0ve1-00015F-Uw@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesture-Survey2
+From: - <jalaha@www23.your-server.de>
+
+#en#1#1,4
+#2#
+#3#1
+#4#
+#5#2
+#6#1
+#7#p2,im2;p4,im19;p9,im15;p14,im16;p8,im6;p18,im25;p19,im24;p6,im17;p10,im6;p11,im10;p21,im26;p22,im3;p12,im30;p1,im28;p3,im29;p13,im9;p7,im14;p15,im17;p20,im15;p16,im13;p17,im12;p5,im1;
+#8#Mouse gestures replacing hotkeys? I use mouse gestures on the Opera Internet Browser (rarely) considering them more as a gimmick than a useful feature. People got accustomed to keyboard \'hotkeys\' as they have proofed as safe, fast, comprehensible and reliable for so many years. However mouse gestures could be an upcoming alternative in case of keyboard malfunctions. They may be useful for the simple parts of control as page navigation in internet browsers, the handling of ordinary commands as copy, cut, paste, merge, enlarge etc. in different software.
+#9#
+

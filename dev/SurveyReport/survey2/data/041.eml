@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12ed08345b99d697
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.28.143 with SMTP id m15cs36432ebc;
+        Sat, 19 Mar 2011 16:46:28 -0700 (PDT)
+Received: by 10.213.17.200 with SMTP id t8mr1366214eba.3.1300578388393;
+        Sat, 19 Mar 2011 16:46:28 -0700 (PDT)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id w12si2725001eeh.83.2011.03.19.16.46.27
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sat, 19 Mar 2011 16:46:27 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q15ql-0001F4-0u; Sun, 20 Mar 2011 00:46:27 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q15qk-0001F1-Vq; Sun, 20 Mar 2011 00:46:26 +0100
+Date: Sun, 20 Mar 2011 00:46:26 +0100
+Message-Id: <E1Q15qk-0001F1-Vq@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesture-Survey2
+From: - <jalaha@www23.your-server.de>
+
+#1#
+#2#bisher nichts davon, ich benutze eher Tastaturkürzel und sehr gern gemischte Tastatur+Maus Bedienug
+#3#1
+#4#
+#5#2
+#6#2
+#7#p20,im16;p21,im26;p22,im3;p14,im6;p16,im13;p12,im5;p11,im27;p19,im21;p1,im24;p2,im25;p10,im28;p9,im1;p6,im15;p13,im10;p18,im9;p8,im18;p7,im17;p15,im3;p3,im2;p4,im4;p5,im30;p17,im12;
+#8#
+#9#
+

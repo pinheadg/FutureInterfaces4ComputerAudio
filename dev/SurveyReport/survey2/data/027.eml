@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12ecb8af34dca0ad
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.28.143 with SMTP id m15cs23413ebc;
+        Fri, 18 Mar 2011 17:36:45 -0700 (PDT)
+Received: by 10.213.35.132 with SMTP id p4mr1003866ebd.108.1300495005616;
+        Fri, 18 Mar 2011 17:36:45 -0700 (PDT)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id p50si1006767eei.98.2011.03.18.17.36.44
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 18 Mar 2011 17:36:44 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q0k9s-0005vN-1c; Sat, 19 Mar 2011 01:36:44 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q0k9s-0005vK-0Z; Sat, 19 Mar 2011 01:36:44 +0100
+Date: Sat, 19 Mar 2011 01:36:44 +0100
+Message-Id: <E1Q0k9s-0005vK-0Z@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesture-Survey2
+From: - <jalaha@www23.your-server.de>
+
+#1#1,4
+#2#
+#3#2
+#4#
+#5#2
+#6#1
+#7#p7,im28;p1,im19;p8,im29;p11,im9;p9,im16;p19,im24;p21,im26;p16,im6;p12,im17;p10,im9;p18,im8;p3,im14;p14,im20;p17,im10;p20,im15;p5,im30;p4,im7;p13,im24;p15,im5;p22,im8;p2,im10;p6,im6;
+#8#die abkürzungen sind zu allgemein. Shortcuts sind für viele vorgeschlagene Mausgesten effektiver
+#9#
+
