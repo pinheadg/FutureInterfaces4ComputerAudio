@@ -172,9 +172,12 @@ foreach(@ARGV)
     }
     elsif(m/^#2#(.+)?/)
     {
-      if($1)
+      my $comment = $1;
+      $comment =~ s/^\s+|\s+$//g; # trim whitespaces
+
+      if($comment ne "")
       {
-        push(@gestexp_comments, $1);
+        push(@gestexp_comments, $comment);
       }
     }
     elsif(m/^#3#(\d)/)
@@ -183,9 +186,12 @@ foreach(@ARGV)
     }
     elsif(m/^#4#(.+)?/)
     {
-      if($1)
+      my $comment = $1;
+      $comment =~ s/^\s+|\s+$//g; # trim whitespaces
+
+      if($comment ne "")
       {
-        push(@audprodexp_comments, $1);
+        push(@audprodexp_comments, $comment);
       }
     }
     elsif(m/^#5#(\d)/)
@@ -223,9 +229,12 @@ foreach(@ARGV)
     }
     elsif(m/^#8#(.+)?/)
     {
-      if($1)
+      my $comment = $1;
+      $comment =~ s/^\s+|\s+$//g; # trim whitespaces
+
+      if($comment ne "")
       {
-        push(@comments, $1);
+        push(@comments, $comment);
       }
     }
     elsif(m/^#9#/)
