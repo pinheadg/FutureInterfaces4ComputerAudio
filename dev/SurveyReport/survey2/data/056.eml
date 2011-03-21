@@ -1,0 +1,41 @@
+X-Account-Key: account2
+X-UIDL: GmailId12ed9f30d5fa680c
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: wincent.balin@gmail.com
+Received: by 10.213.28.143 with SMTP id m15cs65074ebc;
+        Mon, 21 Mar 2011 12:45:09 -0700 (PDT)
+Received: by 10.213.30.13 with SMTP id s13mr2352257ebc.81.1300736708697;
+        Mon, 21 Mar 2011 12:45:08 -0700 (PDT)
+Return-Path: <jalaha@www23.your-server.de>
+Received: from www23.your-server.de (www23.your-server.de [213.133.104.23])
+        by mx.google.com with ESMTPS id v45si6835228eeh.41.2011.03.21.12.45.07
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Mon, 21 Mar 2011 12:45:07 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) client-ip=213.133.104.23;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of jalaha@www23.your-server.de designates 213.133.104.23 as permitted sender) smtp.mail=jalaha@www23.your-server.de
+Received: from localhost ([127.0.0.1] helo=www23.your-server.de)
+	by www23.your-server.de with esmtps (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q1l2G-0007LJ-It; Mon, 21 Mar 2011 20:45:05 +0100
+Received: from jalaha by www23.your-server.de with local (Exim 4.72)
+	(envelope-from <jalaha@www23.your-server.de>)
+	id 1Q1l2F-0007LD-MB; Mon, 21 Mar 2011 20:45:04 +0100
+Date: Mon, 21 Mar 2011 20:45:03 +0100
+Message-Id: <E1Q1l2F-0007LD-MB@www23.your-server.de>
+To: jl@j3l7h.de,wincent.balin@gmail.com
+Subject: Gesture-Survey2
+From: - <jalaha@www23.your-server.de>
+
+#1#1,4
+#2#
+#3#2
+#4#
+#5#2
+#6#2
+#7#p17,im16;p22,im3;p16,im13;p15,im17;p21,im26;p13,im6;p18,im10;p2,im7;p12,im15;p10,im6;p20,im15;p4,im2;p19,im21;p1,im4;p3,im29;p11,im10;p8,im17;p9,im12;p6,im21;p14,im28;p5,im9;p7,im14;
+#8#Ziemlich schlechte Herangehensweise, um brauchbare Ergebnisse zu bekommen.
+#9#
+
