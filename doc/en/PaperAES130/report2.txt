@@ -46,40 +46,6 @@ Comments follow:
 
 Preferred gestures:
 
-Function: Undo last action
-1: down-left
-1: sign-x
-8: left
-2: left-down
-4: left-right
-4: sign-+
-3: tap-hold
-1: right-left
-3: tap
-6: rotate-clockwise
-17: rotate-counterclockwise
-3: up-right
-
-Function: Redo action undone last
-1: down-left
-2: down-right
-1: sign-x
-2: left
-2: left-down
-1: left-right
-2: sign-+
-2: letter
-1: tap-hold
-2: right
-1: right-down
-5: right-left
-3: tap
-18: rotate-clockwise
-5: rotate-counterclockwise
-2: up-left
-3: up-right
-1: triangle
-
 Function: Go one bar forward
 1: digit
 6: down-right
@@ -125,6 +91,57 @@ Function: Jump to beginning
 4: up
 14: up-right
 
+Function: Jump to end
+1: digit
+3: down-left
+2: down
+11: down-right
+1: sign-x
+2: left
+2: left-right
+1: sign-+
+2: tap-hold
+1: tap-double
+7: right
+7: right-down
+3: tap
+1: rotate-counterclockwise
+1: up-down
+9: up-left
+
+Function: Toggle metronome
+2: digit
+1: down
+1: down-up
+1: left-down
+1: left-right
+2: sign-+
+1: left-up
+11: letter
+2: tap-hold
+5: tap-double
+1: multi-spread-vertical
+3: right-left
+3: tap
+1: rotate-clockwise
+18: triangle
+
+Function: Select all
+1: digit
+1: down-up
+5: sign-x
+1: left-right
+2: sign-+
+4: letter
+6: tap-hold
+12: tap-double
+2: right-down
+5: right-left
+2: tap
+5: rotate-clockwise
+5: rotate-counterclockwise
+3: triangle
+
 Function: Cut selected region
 3: down
 1: down-right
@@ -147,24 +164,6 @@ Function: Cut selected region
 1: up-right
 5: triangle
 
-Function: Jump to end
-1: digit
-3: down-left
-2: down
-11: down-right
-1: sign-x
-2: left
-2: left-right
-1: sign-+
-2: tap-hold
-1: tap-double
-7: right
-7: right-down
-3: tap
-1: rotate-counterclockwise
-1: up-down
-9: up-left
-
 Function: Copy selected region
 1: down-left
 1: down
@@ -184,6 +183,162 @@ Function: Copy selected region
 1: up
 2: up-down
 3: triangle
+
+Function: Paste previously cut or copied region
+5: down
+3: down-right
+2: down-up
+1: sign-x
+2: left-down
+4: sign-+
+3: letter
+2: multi-pinch-horizontal
+1: multi-pinch-vertical
+7: tap-hold
+8: tap-double
+1: multi-spread-horizontal
+6: right-down
+3: tap
+1: up
+1: up-down
+2: up-left
+2: triangle
+
+Function: Duplicate selected region
+3: digit
+1: down-right
+3: sign-x
+1: left-right
+5: sign-+
+9: letter
+1: tap-hold
+9: tap-double
+2: multi-spread-horizontal
+1: multi-spread-vertical
+2: right
+2: right-left
+2: tap
+1: right-up
+3: rotate-clockwise
+2: up-left
+2: triangle
+
+Function: Delete selected region
+2: down-left
+1: down
+1: down-right
+1: down-up
+18: sign-x
+8: left
+2: left-down
+2: left-right
+5: sign-+
+1: letter
+1: multi-pinch-horizontal
+1: tap-hold
+2: tap-double
+1: multi-spread-horizontal
+1: right
+1: right-down
+2: tap
+1: up-left
+3: up-right
+
+Function: Split selected region
+5: down
+3: down-right
+8: down-up
+2: sign-x
+1: left-down
+2: left-right
+5: sign-+
+4: letter
+12: multi-spread-horizontal
+1: multi-spread-vertical
+1: right
+1: right-down
+3: tap
+1: right-up
+1: rotate-clockwise
+1: up
+2: up-down
+1: triangle
+
+Function: Glue selected regions together
+1: down
+2: down-up
+2: sign-x
+2: left-right
+3: sign-+
+2: letter
+27: multi-pinch-horizontal
+1: multi-pinch-vertical
+3: tap-hold
+1: tap-double
+1: multi-spread-horizontal
+2: right-left
+1: tap
+1: right-up
+1: rotate-counterclockwise
+1: up
+3: triangle
+
+Function: Undo last action
+1: down-left
+1: sign-x
+8: left
+2: left-down
+4: left-right
+4: sign-+
+3: tap-hold
+1: right-left
+3: tap
+6: rotate-clockwise
+17: rotate-counterclockwise
+3: up-right
+
+Function: Redo action undone last
+1: down-left
+2: down-right
+1: sign-x
+2: left
+2: left-down
+1: left-right
+2: sign-+
+2: letter
+1: tap-hold
+2: right
+1: right-down
+5: right-left
+3: tap
+18: rotate-clockwise
+5: rotate-counterclockwise
+2: up-left
+3: up-right
+1: triangle
+
+Function: Increase value of a control
+1: digit
+1: sign-x
+1: multi-spread-horizontal
+1: tap
+2: right-up
+10: rotate-clockwise
+1: rotate-counterclockwise
+35: up
+1: up-down
+1: triangle
+
+Function: Decrease value of a control
+36: down
+1: down-up
+2: left-down
+1: multi-pinch-horizontal
+2: right-down
+1: tap
+1: rotate-clockwise
+9: rotate-counterclockwise
+1: up-left
 
 Function: Fit selected track to window
 4: digit
@@ -208,42 +363,6 @@ Function: Fit selected track to window
 2: up-left
 3: triangle
 
-Function: Select all
-1: digit
-1: down-up
-5: sign-x
-1: left-right
-2: sign-+
-4: letter
-6: tap-hold
-12: tap-double
-2: right-down
-5: right-left
-2: tap
-5: rotate-clockwise
-5: rotate-counterclockwise
-3: triangle
-
-Function: Paste previously cut or copied region
-5: down
-3: down-right
-2: down-up
-1: sign-x
-2: left-down
-4: sign-+
-3: letter
-2: multi-pinch-horizontal
-1: multi-pinch-vertical
-7: tap-hold
-8: tap-double
-1: multi-spread-horizontal
-6: right-down
-3: tap
-1: up
-1: up-down
-2: up-left
-2: triangle
-
 Function: Fit selected region to window
 1: digit
 1: down-up
@@ -264,37 +383,6 @@ Function: Fit selected region to window
 2: up-down
 1: triangle
 
-Function: Increase value of a control
-1: digit
-1: sign-x
-1: multi-spread-horizontal
-1: tap
-2: right-up
-10: rotate-clockwise
-1: rotate-counterclockwise
-35: up
-1: up-down
-1: triangle
-
-Function: Duplicate selected region
-3: digit
-1: down-right
-3: sign-x
-1: left-right
-5: sign-+
-9: letter
-1: tap-hold
-9: tap-double
-2: multi-spread-horizontal
-1: multi-spread-vertical
-2: right
-2: right-left
-2: tap
-1: right-up
-3: rotate-clockwise
-2: up-left
-2: triangle
-
 Function: Fit all tracks to window: vertical
 2: down
 5: down-up
@@ -311,38 +399,6 @@ Function: Fit all tracks to window: vertical
 5: up-down
 2: up-left
 1: triangle
-
-Function: Decrease value of a control
-36: down
-1: down-up
-2: left-down
-1: multi-pinch-horizontal
-2: right-down
-1: tap
-1: rotate-clockwise
-9: rotate-counterclockwise
-1: up-left
-
-Function: Delete selected region
-2: down-left
-1: down
-1: down-right
-1: down-up
-18: sign-x
-8: left
-2: left-down
-2: left-right
-5: sign-+
-1: letter
-1: multi-pinch-horizontal
-1: tap-hold
-2: tap-double
-1: multi-spread-horizontal
-1: right
-1: right-down
-2: tap
-1: up-left
-3: up-right
 
 Function: Fit all tracks to window: horizontal
 1: down
@@ -365,26 +421,6 @@ Function: Fit all tracks to window: horizontal
 1: up-left
 1: up-right
 
-Function: Split selected region
-5: down
-3: down-right
-8: down-up
-2: sign-x
-1: left-down
-2: left-right
-5: sign-+
-4: letter
-12: multi-spread-horizontal
-1: multi-spread-vertical
-1: right
-1: right-down
-3: tap
-1: right-up
-1: rotate-clockwise
-1: up
-2: up-down
-1: triangle
-
 Function: Recall zoom preset
 3: digit
 1: down-up
@@ -405,42 +441,6 @@ Function: Recall zoom preset
 1: up-right
 1: triangle
 
-Function: Glue selected regions together
-1: down
-2: down-up
-2: sign-x
-2: left-right
-3: sign-+
-2: letter
-27: multi-pinch-horizontal
-1: multi-pinch-vertical
-3: tap-hold
-1: tap-double
-1: multi-spread-horizontal
-2: right-left
-1: tap
-1: right-up
-1: rotate-counterclockwise
-1: up
-3: triangle
-
-Function: Toggle metronome
-2: digit
-1: down
-1: down-up
-1: left-down
-1: left-right
-2: sign-+
-1: left-up
-11: letter
-2: tap-hold
-5: tap-double
-1: multi-spread-vertical
-3: right-left
-3: tap
-1: rotate-clockwise
-18: triangle
-
 
 Miscellaneous comments follow:
  * Interessante Umfrage! Viel Erfolg bei der Arbeit!
@@ -451,8 +451,8 @@ Miscellaneous comments follow:
  * Interessanter Ansatz, ich denke jedoch, ganz ohne Keyboard könnte ich nicht, Allein schon aufgrund von Keyboard-Mouse-Kombinationen (z.B. Strg-Mousewheel für PageUp/Down oder Alt-Click für Duplicate etc.).
  * Mouse gestures replacing hotkeys? I use mouse gestures on the Opera Internet Browser (rarely) considering them more as a gimmick than a useful feature. People got accustomed to keyboard \'hotkeys\' as they have proofed as safe, fast, comprehensible and reliable for so many years. However mouse gestures could be an upcoming alternative in case of keyboard malfunctions. They may be useful for the simple parts of control as page navigation in internet browsers, the handling of ordinary commands as copy, cut, paste, merge, enlarge etc. in different software.
  * I think the use of different numbers of fingers would be useful. In my operating system, two fingers can scroll up and down, while three navigate to home/end.  Four fingers hide all windows, etc. It might be easier to remember a few gestures used with multiple combinations of fingers rather than a lot of gestures just for one or two fingers.
- * Gesten sind großartig, abr sollten immer nur optional, zusätzlich angeboten werden. Ich empfinde die Zoom-Funktionen als besonders wichtig, da ich diese Geste bei vielen Softwares bereits nutze (zwei Finger auf/zuziehen). Wichitg wäre mir als User, dass die Gesten-Erkennung per default ausgeschaltet ist und erst aktiviert werden muss. In einigen Spielen (zb BLACK&WHITE) gab es Gesten-Erkennung, die standartmäßig aktiviert waren - das war für User immer eine negative Überraschung, wenn man plötzlich durch einen Mouseschwenk Funktionen auslöste, die man nicht wollte.
- * Meiner Meinung nach sind gerade im Multitouchbereich noch einige weitere leicht einzuprägende und sinnvolle Gesten möglich. Was in dem hier dargestellten Satz von Gesten fehlt ist beispielsweise eine Kombination von einem festgehaltenen und einem bewegten Punkt, was gerade für Zoomeinstellungen, sowohl im Horizontalen wie Vertikalen praktisch sein könnte. Ferner können sowohl Doppel, als auch Einfachklick variiert werden, in dem der Bildschirm in Quadranten eingeteilt wird. Die Transportkontrolle könnte dann zum Beispiel durch vier Einfachklicks gesteuert werden (oben links=stop, oben rechtes=play, unten links=rev, unten rechts=fwd, o.Ä.). Prinzipiell bin ich von der Idee einer Multitouchbedienung für DAWs begeistert und wünsche viel Erfolg bei der Entwicklung.
+ * Gesten sind groîartig, abr sollten immer nur optional, zusätzlich angeboten werden. Ich empfinde die Zoom-Funktionen als besonders wichtig, da ich diese Geste bei vielen Softwares bereits nutze (zwei Finger auf/zuziehen). Wichitg wäre mir als User, dass die Gesten-Erkennung per default ausgeschaltet ist und erst aktiviert werden muss. In einigen Spielen (zb BLACK&WHITE) gab es Gesten-Erkennung, die standartmäîig aktiviert waren - das war für User immer eine negative _berraschung, wenn man plötzlich durch einen Mouseschwenk Funktionen auslöste, die man nicht wollte.
+ * Meiner Meinung nach sind gerade im Multitouchbereich noch einige weitere leicht einzuprägende und sinnvolle Gesten möglich. Was in dem hier dargestellten Satz von Gesten fehlt ist beispielsweise eine Kombination von einem festgehaltenen und einem bewegten Punkt, was gerade für Zoomeinstellungen, sowohl im Horizontalen wie Vertikalen praktisch sein könnte. Ferner können sowohl Doppel, als auch Einfachklick variiert werden, in dem der Bildschirm in Quadranten eingeteilt wird. Die Transportkontrolle könnte dann zum Beispiel durch vier Einfachklicks gesteuert werden (oben links=stop, oben rechtes=play, unten links=rev, unten rechts=fwd, o.-.). Prinzipiell bin ich von der Idee einer Multitouchbedienung für DAWs begeistert und wünsche viel Erfolg bei der Entwicklung.
  * Die Auswahl finde ich recht limitiert. Insbesondere Kombinationen obiger Auswahl sind denkbar, etwa Doppelklick, wobei der 2. Klick gehalten und dann z.B. gezogen wird. Desweiteren muessen alle erforderlichen Operationen (oben genannte + vermutlich mehr) gegeneinander abgestimmt werden. Kontext, d.h. Objekte auf dem Bildschirm (z.B. Spuren), ihre Groesse und Operationen, welche ebenfalls dort ausgefuehrt werden sollen, muessen aufeinander abgestimmt sein. Es ist wohl ein iteratives ausprobieren angebracht, allerdings ist Vorsicht vor der Lernkurve geboten. Es sollten moeglichst haeufig neue Tester herangeschafft werden. Symbole koennten hinweise auf Operationen geben... Einige Operationen koennen auf Buttons bleiben (z.B. Zoomstufe)
  * Ziemlich schlechte Herangehensweise, um brauchbare Ergebnisse zu bekommen.
 ----
