@@ -60,8 +60,8 @@ Aggregat uses multi-touch capabilities at great lengths. The usual Ableton Live 
 on a touch-sensitive table. But aside from Aggregat, neither mouse gestures nor multi-touch gestures are used
 in traditional DAW programs, and even single-touch gestures resemble nothing more than pointing and clicking with a mouse.
 
-The usual workflow when editing an audio document, as this is the main purpose of classic DAW programs, means chains
-of edits. An edit means in this case the following sequence of steps:
+The usual workflow when editing an audio document, as this is the main purpose of classic DAW programs, means
+performing chains of edits. An edit means in this case the following sequence of steps:
 
 \begin{enumerate}
 \item Moving the cursor to the tool panel
@@ -92,14 +92,32 @@ Eventually, the section~\ref{sec:Conclusions} concludes this paper.
 
 \section{Related work}
 
-Using gestures to control DAW software touches many different aspects.
-
-It should be said specifically about the notion of \emph{intuitive} gestures that there is a difference
+Using gestures to control DAW software touches many different aspects. Beginning with the psychological one,
+it should be said specifically about the notion of \emph{intuitive} gestures that there is a difference
 between the gestures intuitive for a beginner and those intuitive for an expert. Whereas the concept of
-intuition implies \emph{non-concious} use of knowledge \cite{Naumann:2007:IUU:1784197.1784212}, an expert
-has additional layers of knowledge, acquired by experience. Our study 
+intuition implies \emph{non-concious} use of knowledge\cite{Naumann:2007:IUU:1784197.1784212}, an expert
+has additional layers of it, acquired by experience. In case of this study, this knowledge consists of
+memorized keyboard shortcuts of frequently used commands.
 
-\cite{Appert:2009:USC:1518701.1519052}
+Appert and Zhai provide in \cite{Appert:2009:USC:1518701.1519052} an example how to use mouse gestures
+as replacements for keyboard shortcuts. Among other results, they found mouse gestures being faster in use,
+better to recall and less error prone than the much more often used shortcuts. Also, in this work
+the authors provide a software package for recognition of mouse gestures, which can be easily integrated
+into existing software, providing it is implemented in Java programming language.
+
+The process of developing a user-defined gesture set for a target with multi-touch interface is explained
+in \cite{Wobbrock:2009:UGS:1518701.1518866}. Also, this work contains many useful observations, some of which
+were affirmed in the results of the survey.
+
+The advantage of gestures reducing the on-screen clutter also has a darker side --- they remain invisible
+to the user before activation. Historically, this issue has been countered with marking menus
+\cite{Kurtenbach:1993:LEP:164632.164977,Kurtenbach:1994:ULP:259963.260376}, which constitute a radial menu
+with explanations of possible directions, coming up every time the user activated a gesture, but has not
+performed a recognizable gesture yet. The concept of marking menus was extended to multi-touch interfaces
+in \cite{Lepinski:2010:DEM:1753326.1753663}.
+
+
+
 
 %The differences between the mouse and the multi-touch interface, from which the differences between
 %the mouse gestures and multi-touch gestures will be expanded, were introduced in \cite{Buxton:1985:ITT:325334.325239}.
