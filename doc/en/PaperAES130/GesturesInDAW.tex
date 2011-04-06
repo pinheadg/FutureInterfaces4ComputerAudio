@@ -1,208 +1,18 @@
 \documentclass{aes130}
 \hyphenation{Post-Script}
 
+\usepackage{flushend} 
+
+\clubpenalty = 40000
+\widowpenalty = 40000
+
 \usepackage{array}
 \usepackage{rotating}
 
 \usepackage{url}
 
-\authors{Wincent Balin\aff{1} and
-         J\"{o}rn Loviscach\aff{2}}
-\affiliation[1]{Universit\"{a}t Oldenburg, D-26111-Oldenburg, Germany}
-\affiliation[2]{Fachhochschule Bielefeld (University of Applied Sciences), D-33602-Bielefeld, Germany}
-\title{Gestures to Operate DAW Software}
-
-\lastnames{Balin, Loviscach}
-\correspondence{J\"{o}rn Loviscach}{joern.loviscach@hs-bielefeld.de}
-
-\begin{abstract}
-There is a noticeable absence of gestures---be they mouse-based or
-(multi-)touch-based---in mainstream digital audio workstation (DAW)
-software. As an example for such a gesture consider a clockwise O
-drawn with the finger to increase a value of a parameter. The increasing
-availability of devices such as smartphones, tablet computers and touchscreen
-displays raises the question in how far audio software can benefit from gestures.
-We describe design strategies to create a consistent set of gesture commands.
-The main part of this paper reports on a user survey on mappings between 22~DAW
-functions and 30~single-point as well as multi-point gestures.
-We discuss the findings and point out consequences for user-interface design.
-\end{abstract}
-
-\begin{document}
-\maketitle
-
-\section{Introduction}
-
-In the last years, the concept of gesture became pervasive --- everyone in the western world either owns
-at least one electronic device with gestural interface or knows someone who does. The mentioned devices
-are most often portable. On non-portable devices, mainly personal computers (PC), the support of gestures
-only recently began to win hearts and minds, as is the case with multi-touch gestures, or has been largely neglected,
-as the situation with mouse gestures is.
-
-Despite the circumstances described, many a power user took mouse gestures to his heart. The Opera web browser
-introduced support of mouse gestures in April 2001\cite{WikipediaMouseGesture}, and this feature
-had enough appeal for it's users to be reintroduced both to Mozilla Firefox (with --- currently --- more
-than ten extensions\cite{FirefoxGestureExtensions}) and to Microsoft internet Explorer
-(for example \cite{InternetExplorerGestures}) web browsers. Autodesk Maya, a 3D modeller software,
-goes even further by using marking menus\cite{Kurtenbach:1994:ULP:259963.260376}, an input method related
-to mouse gestures, by default.
-
-But classic digital audio workstation (DAW) programs seem to shun gestures alltogether. Today,
-most of the music software with gesture support runs on Apple iOS based platforms. A good example is
-StepPolyArp\cite{StepPolyArp}, a MIDI arpeggiator software.
-An additional event therein is created by touching an empty cell in the events grid\cite{StepPolyArpManual},
-changing length of the event is done simply by dragging it, tap-and-hold and dragging afterwards is used to move the event
-and to delete the event, the user places his finger upon the event and then swipes it down.
-
-Looking back to classic DAW software, there is a performance tool for Ableton Live software called Aggregat\cite{Aggregat}.
-It is still under heavy development, but on the associated web page the developers provide a demonstration video.
-Aggregat uses multi-touch capabilities at great lengths. The usual Ableton Live widgets are appropriately presented
-on a touch-sensitive table. But aside from Aggregat, neither mouse gestures nor multi-touch gestures are used
-in traditional DAW programs, and even single-touch gestures resemble nothing more than pointing and clicking with a mouse.
-
-The usual workflow when editing an audio document, as this is the main purpose of classic DAW programs, means
-performing chains of edits. An edit means in this case the following sequence of steps:
-
-\begin{enumerate}
-\item Moving the cursor to the tool panel
-\item Choosing the needed tool (through a menu or a button widget)
-\item Moving the cursor back to the editing area
-\item Performing an action with a tool
-\item If the tool is destructive, most probably moving back to tool panel and \ldots
-\item choosing a non-destructive tool
-\end{enumerate}
-
-Even without using quantification methods, such as GOMS\cite{Card:1983:PHI:578027}, it is evident
-that the list above lasts much longer than a single gesture. In case the user tries to remedy the duration
-of an edit through keyboard shortcuts, a gesture, especially on a touch screen, does not require to shift the user's
-focus, at least occasionally, from screen to keyboard and back. Also, keyboard shortcuts require some time
-and practice to become memorized. This is less true for gestures\cite{Appert:2009:USC:1518701.1519052}.
-
-To conclude, which gestures are most appropriate for which functions of DAW software, we conducted
-a survey among trained DAW users. First, we selected common DAW functions, performed repeatedly and often.
-Second, we compiled a collection of gestures and selected 30 of them to appear in the survey. Then
-we presented a bilingual survey to DAW users, who chose, which gesture does correspond to which DAW function
-the most.
-
-This paper is structured around the survey. The next section presents related approaches.
-Section~\ref{sec:EditingTasks} discusses which audio editing tasks will be taken into the survey.
-The section~\ref{sec:Gestures} describes available gestures and the process of their selection.
-The main sections~\ref{sec:Survey1} and \ref{sec:Survey2} discuss the first and the second versions of the survey.
-Eventually, the section~\ref{sec:Conclusions} concludes this paper.
-
-\section{Related work}
-
-Using gestures to control DAW software touches many different aspects. Beginning with the psychological one,
-it should be said specifically about the notion of \emph{intuitive} gestures that there is a difference
-between the gestures intuitive for a beginner and those intuitive for an expert. Whereas the concept of
-intuition implies \emph{non-concious} use of knowledge\cite{Naumann:2007:IUU:1784197.1784212}, an expert
-has additional layers of it, acquired by experience. In case of this study, this knowledge consists of
-memorized keyboard shortcuts of frequently used commands.
-
-Appert and Zhai provide in \cite{Appert:2009:USC:1518701.1519052} an example how to use mouse gestures
-as replacements for keyboard shortcuts. Among other results, they found mouse gestures being faster in use,
-better to recall and less error prone than the much more often used shortcuts. Also, in this work
-the authors provide a software package for recognition of mouse gestures, which can be easily integrated
-into existing software, providing it is implemented in Java programming language.
-
-The process of developing a user-defined gesture set for a target with multi-touch interface is explained
-in \cite{Wobbrock:2009:UGS:1518701.1518866}. Also, this work contains many useful observations, some of which
-were affirmed in the results of the survey.
-
-The advantage of gestures reducing the on-screen clutter also has a darker side --- they remain invisible
-to the user before activation. Historically, this issue has been countered with marking menus
-\cite{Kurtenbach:1993:LEP:164632.164977,Kurtenbach:1994:ULP:259963.260376}, which constitute a radial menu
-with explanations of possible directions, coming up every time the user activated a gesture, but has not
-performed a recognizable gesture yet. The concept of marking menus was extended to multi-touch interfaces
-in \cite{Lepinski:2010:DEM:1753326.1753663}.
-
-
-
-
-%The differences between the mouse and the multi-touch interface, from which the differences between
-%the mouse gestures and multi-touch gestures will be expanded, were introduced in \cite{Buxton:1985:ITT:325334.325239}.
-%Such differences consist of 
-%
-%A graphic similarity between mouse gestures and marking menus, as well several statements related
-%to gestures, were demonstrated in \cite{Kurtenbach:1993:LEP:164632.164977}.
-%The differences between mouse and multi-touch screen, contrary to differences between mouse input
-%and touch tablet, as it was in \cite{Kurtenbach:1993:LEP:164632.164977}, are discussed in
-%\cite{Forlines:2007:DVM:1240624.1240726}.
-%
-%The taxonomy in \cite{ecs11149} helps to classify the groups of gestures observed in this paper.
-%A small taxonomy for multi-touch gestures is also provided in \cite{Wigdor:2010:ANU:1842993.1842997},
-%but it is directed towards surface input devices. Another taxonomy is presented 
-%n \cite{Wobbrock:2009:UGS:1518701.1518866}; also, this work has many useful observations,
-%some of which were seconded in the results of the survey.
-%
-%When choosing gesture candidates for the survey, the paper \cite{Naumann:2007:IUU:1784197.1784212}
-%explains the concept of an ``intuitive'' gesture in a concise manner. The document \cite{Lee:2009:EEP:1520340.1520667}
-%helps to counter the overuse of gestures with inertial behaviour, as well as distinguishing between
-%the needs of mouse gestures and touch gestures. Another work that cautions against improvident use
-%of gestures is \cite{Norman:2010:GIS:1836216.1836228}.
-%
-%The methodology of designing a gestural language using brainstorming is explained in
-%\cite{Akers:2007:ODM:1240866.1240868}. In a similar venue lies \cite{SalatBottomUpApproach}, which explains
-%the bottom-up approach to software design.
-%
-%A design both of a gesture language and of a software package, which connects the gestures
-%as a replacement or an addition to applications written in Java programming language and using
-%its Swing toolkit, is presented in \cite{Appert:2009:USC:1518701.1519052}. The document also
-%provides a comparison between mouse gestures and keyboard shortcuts.
-%
-%The paper \cite{Kammer:2010:TFM:1936652.1936662} describes formal description for multi-touch gestures,
-%which is also capable of producing formal descriptions of single-touch as well as mouse gestures.
-
-\section{Selection of editing tasks} \label{sec:EditingTasks}
-
-
-
-\section{Selection of gestures} \label{sec:Gestures}
-
-% Include graphics
-\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{../../de/Befragung/img/#1}}
-\newcommand{\sixthpic}[1][]{\includegraphics[scale=0.17]{../../de/Befragung/img/#1}}
-
-Definition of gesture
-
-Taxonomy: one-time/continuous/repeated
-
-Direction (vertical/horizontal) of a (zoom-)gesture matters
-
-Static/dynamic
-
-Using finger nails
-
-StrokeIt
-
-
-\section{First survey} \label{sec:Survey1}
-
-
-\subsection{Results} \label{sec:Survey1Results}
-
-\begin{table} \label{tab:Survey1FrequencyOfChoices}
-\begin{center}
-\begin{tabular}{|c|r||c|r||c|r|} \hline
-
-\sixthpic[right]            & 14 & \sixthpic[up]           & 12 & \sixthpic[rotate-clockwise]              & 24 \\ \hline
-\sixthpic[right-up]         &  2 & \sixthpic[up-left]      & 10 & \sixthpic[rotate-counterclockwise]       & 16 \\ \hline
-\sixthpic[right-down]       & 17 & \sixthpic[up-right]     &  9 & \sixthpic[digit-1]                       &  9 \\ \hline
-\sixthpic[right-left]       &  5 & \sixthpic[up-down]      &  8 & \sixthpic[letter-a]                      & 33 \\ \hline
-\sixthpic[right-left-right] &  7 & \sixthpic[up-down-up]   &  5 & \sixthpic[multi-pinch-horizontal]        & 15 \\ \hline
-\sixthpic[left]             & 10 & \sixthpic[down]         & 17 & \sixthpic[multi-pinch-vertical]          &  7 \\ \hline
-\sixthpic[left-up]          &  6 & \sixthpic[down-left]    &  5 & \sixthpic[multi-spread-horizontal]       & 21 \\ \hline
-\sixthpic[left-down]        &  2 & \sixthpic[down-right]   &  9 & \sixthpic[multi-spread-vertical]         & 15 \\ \hline
-\sixthpic[left-right]       & 11 & \sixthpic[down-up]      &  9 & \sixthpic[multi-rotate-clockwise]        &  7 \\ \hline
-\sixthpic[left-right-left]  & 13 & \sixthpic[down-up-down] &  5 & \sixthpic[multi-rotate-counterclockwise] &  6 \\ \hline
-
-\end{tabular}
-\end{center}
-\caption{Choice frequency for different gestures in the first survey}
-\end{table}
-
-
-% Make vertical cells
+\newcommand{\quarterpic}[1][]{\includegraphics[scale=0.25]{img/#1.pdf}}
+\newcommand{\sixthpic}[1][]{\includegraphics[scale=0.17]{img/#1.pdf}}
 \newcolumntype{v}[1]{%
   >{\begin{turn}{90}\begin{minipage}{15em}\raggedright\hspace{0pt}}l%
   <{\end{minipage}\end{turn}}|%
@@ -212,221 +22,128 @@ StrokeIt
   <{\end{minipage}\end{turn}}|%
 }
 
-\begin{table*} \label{tab:Survey1Results}
-\footnotesize
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
+\authors{Wincent Balin\aff{1} and
+         J\"{o}rn Loviscach\aff{2}}
+\affiliation[1]{Universit\"{a}t Oldenburg, D-26111-Oldenburg, Germany}
+\affiliation[2]{Fachhochschule Bielefeld (University of Applied Sciences), D-33602-Bielefeld, Germany}
+\title{Gestures to Operate DAW Software}
 
+\lastnames{Balin, Loviscach}
+\correspondence{J\"{o}rn Loviscach}{joern.loviscach@fh-bielefeld.de}
+
+\begin{abstract}
+There is a noticeable absence of gestures---be they mouse-based or (multi-)touch-based---in mainstream digital audio workstation (DAW) software. As an example for such a gesture consider a clockwise O drawn with the finger to increase a value of a parameter. The increasing availability of devices such as smartphones, tablet computers and touchscreen displays raises the question in how far audio software can benefit from gestures. We describe design strategies to create a consistent set of gesture commands. The main part of this paper reports on a user survey on mappings between 22~DAW functions and 30~single-point as well as multi-point gestures. We discuss the findings and point out consequences for user-interface design.
+\end{abstract}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+A major advantage of using gestures is the removal of visually obtrusive user interface elements (widgets) such as buttons, dials and context menus usually needed to invoke a function or control a parameter of the software. This helps to remove clutter; the graphical user interface can focus on the content. Gestures can be a blessing on a space-constrained screen, which explains their popularity on touch-enabled mobile devices. Since many of the current touch-enabled mobile devices lack a standard computer keyboard, shortcut keystrokes---as used regularly with desktop computers---are not available. On these devices, gestures also benefit from the bimanual operation and from the direct interaction with the screen as opposed to an execution of gestural strokes with an attached computer mouse.
+
+Gestures are common on mobile devices but can also be found in standard desktop software. In 2001, Opera Software enhanced their web browser by mouse gestures~\cite{OperaGestures}. In the meantime, a range of gesture extensions has become available for Mozilla Firefox~\cite{FirefoxGestureExtensions} and Microsoft Internet Explorer, see for instance~\cite{InternetExplorerGestures}. Autodesk Maya, a 3D modeling and animation software package, goes even further by using marking menus~\cite{Kurtenbach:1994:ULP:259963.260376} by default, an input method related to abstract, non-metaphorical mouse gestures.
+
+Classic digital audio workstation (DAW) software, however, seems to shun gestures altogether. Today, most music software with gesture support runs on Apple iOS. For instance, in StepPolyArp~\cite{StepPolyArp}, a MIDI arpeggiator software, the user places his or her finger on the rectangle representing a trigger event and then swipes it down to delete it. In a similar fashion, Apple GarageBand for iPad~\cite{garage} employs basic gestures for zooming and parameter control---in addition to using the touch screen as virtual piano keyboard, guitar, or drum set, which may not be considered a use of gestures.
+
+%Concerning desktop DAW software, there is a performance tool for Ableton Live software called Aggregat~\cite{Aggregat}. Whereas this software is still under development, the developers provide a demonstration video on the associated web page. Aggregat uses multi-touch capabilities at great lengths. The usual widgets of Ableton Live are presented appropriately on a touch-sensitive table.
+
+Considering these developments and the users' growing awareness of gesture control through mobile devices, it seems only a matter of time until gestures are widely adopted in {\em desktop} DAW software as well. A quick swipe over a note accomplishes its function much faster than going to a tool panel, choosing an eraser tool, pointing the cursor to the note and doing a click---and then most probably switching back to a pointing tool on the tool panel to prevent further, unwanted deletions. Even without using quantification methods such as GOMS~\cite{Card:1983:PHI:578027} it is evident that stepping through the list of actions mentioned above takes more time and mental effort than executing a single gesture. 
+
+An alternative to clicking icons in the toolbox would be using keyboard shortcuts to switch tools, keeping one hand on the mouse and the other on the computer keyboard. But this requires memorizing the shortcuts; it still incurs a sequence of three actions (key, mouse, key) rather than one gesture; and it requires the user to temporarily shift his or her focus from the screen to the keyboard and back, at least occasionally.
+
+There is a technically-induced difference between mouse gestures, single-finger and multi-touch gestures. Some finger gestures may readily be converted to mouse gestures. It is, however, difficult to hold a mouse button pressed while performing a mouse gesture. Multi-touch gestures open a new realm of expression, but require specific display hardware. Assuming that an ecosystem~\cite{fatigue} of consistent choices that extend from mobile devices to desktop computers is needed, this work looks at all these three kinds of gestures and treats them on the same footing.
+
+Gestures need to be picked judiciously. One option is to create ``intuitive'' ones, that is: ones that leverage cultural, sensimotor or even innate knowledge~\cite{Naumann:2007:IUU:1784197.1784212}. For instance, the usual ``pinch'' gesture for zooming out with two fingers moving on the screen may stem from extending or compressing tissue in the real world. An entirely different approach is to create gestures that are entirely symbolic but can be learned progressively. Section~\ref{related} will elaborate on existing discussions of such issues. 
+
+The objective of this work is to examine which gestures are the most promising ones to be used in DAW software. We have built a list of common tasks and collected a repertoire of mouse/single-touch/multi-touch gestures, which we subjected to a first user survey. Section~\ref{initial} introduces the survey-based approach we chose and presents the results of the initial survey that was conducted as a pre-test. This survey helped to filter the initial repertoire but also to add a small number of further gestures. This refined repertoire was subjected to a second survey, which is covered in Section~\ref{final}, together with its results. Section~\ref{sec:Conclusions} concludes this paper and provides and outlook on future work.
+
+\section{Related work}\label{related}
+
+Gestures can be input by mouse, touch, visual recognition and other techniques. Research done on gestural input in the past 40~years~\cite{ecs11149} has emphasized vision-based techniques and ``semaphoric'' gestures, that is: gestures from a dictionary of abstract symbols. Already in their 1985 paper~\cite{Buxton:1985:ITT:325165.325239} on touch tablets, Buxton and his coauthors hinted at the possibilities of multi-touch and even of pressure-sensitive devices---while pointing out the increased importance of visual and audio feedback due to the lack of haptic feedback.
+
+Modern developments encompass a range of software development frameworks for multi-touch interaction~\cite{frameworks}, not mentioning the existing support in operating systems such as Apple iOS, Microsoft Windows~7, and Google Android. Already Windows XP edition for Tablet PC contained a recognizer for gestures executed with the stylus~\cite{xp}. Along with the technology, critique has evolved. Norman~\cite{Norman:2010:GIS:1836216.1836228} finds a lack of guidelines and an ignorance of conventions and established findings of human-computer interaction in current touch-based gestural interfaces. For instance, it is hard to guess the ``magical'' gesture that will perform a specific function; radio buttons and checkboxes no longer look different; it is easy to trigger unwanted actions but hard to undo accidental selections.
+
+Thus, the design of such interfaces is still far from optimal. Wu et al.~\cite{Wu:2006:GRR:1109723.1110635} propose to move away from ad-hoc designs to an approach based on the principles of gesture registration (e.\,g., switching the role of a stylus from a selection lasso to a handle used for dragging), gesture relaxation (e.\,g., choosing a less awkward pose to continue after the initial recognition), and gesture and tool reuse (e.\,g., using the same gesture for different commands depending on the context). Referring to gestures in particular, George and Blake introduce objects, containers, gestures, and manipulations as general concepts in human-computer interaction~\cite{ocgm}.
+
+In a more concrete way, other authors have introduced taxonomies to describe the vast range of touch and multi-touch gestures. Wigdor~\cite{Wigdor:2010:ANU:1842993.1842997} distinguishes 16 different types: Are gestures executed with a single finger, several fingers, a single shape (such as the palm of the hand) or with multiple shapes? Does the palm of the hand trace a path or not? Does the shape change or not? Kammer et al.~\cite{Kammer:2010:TFM:1936652.1936662} propose a formalization of multi-touch gestures through different parameters: the shape of the recognized blob, its motion, the ``temporal progression'' (parallel, successive, or asynchronous), the ``focus'' (how which target is identified), and ``area constraints'' (such as join and spread).
+
+Instead of providing users with a fixed set of gestures, one can try to learn from observation~\cite{Akers:2007:ODM:1240866.1240868}. The study by Wobbrock et al.~\cite{Wobbrock:2009:UGS:1518701.1518866} finds that users do not distinguish much between single- and multi-touch gestures, they tend to use one hand rather than both hands, are strongly influenced by what they have learned from desktop computers, and that some commands tend to be represented with a large range of gestures. For the latter commands, regular on-screen widgets may be suited better than gestures. The same work introduces another taxonomy: static or dynamic ``form'' concerning pose and path; a ``nature'' ranging from physical to abstract; a ``binding'' ranging from object-centric to world-independent; and a ``flow'' ranging from discrete (response occurs after gesture) to continuous. This taxonomy seems to be the most promising for the application in DAWs. The ``binding'' can for instance distinguish if a gesture concerns a snippet of audio or a control knob or a general action such as saving the current project. The ``flow'' can indicate if a gesture invokes single action such as deleting a note or if it leads to continuous feedback such as when interactively setting a parameter.
+
+Referring to the user's intuition~\cite{Naumann:2007:IUU:1784197.1784212} is central to most efforts to a principled design of gestural interfaces. In a decidedly different approach, Kurtenbach and Buxton propose to use polygonal lines to cross a hierarchy of ``marking menus''~\cite{Kurtenbach:1993:LEP:164632.164977}. After a learning phase, the text of the menus can be removed from the screen so that only an (abstract) mouse gesture remains. In another work about non-mnemonic interfaces, Appert and Zhai~\cite{Appert:2009:USC:1518701.1519052} compare stroke shortcuts to keyboard shortcuts for commands that bear no mnemonic link to the shortcut. They find that stroke shortcuts are far easier to learn.
+
+On the opposite side, Lee and Lee~\cite{Lee:2009:EEP:1520340.1520667} attempt an even more prominent use of intuition through simulated physical behavior. Measuring the performance of users in handling a contact list that possesses a varying degree of inertia when scrolling, they find that inertia is detrimental for the operation with the mouse but beneficial for the operation by touch.
+
+\section{Approach and initial survey}\label{initial}
+
+To examine if basic commands of a DAW offer an ``intuitive''~\cite{Naumann:2007:IUU:1784197.1784212} mapping to gestures, we picked a set of commands, see Table~\ref{commands}, and conducted two iterations of a web-based survey among prospective users. In each survey, the users had to assign one of 30~fixed gestures to each of the 22~commands. Both the gestures and the commands were presented in randomized order. Some of the commands such as ``split selected region'' change a specific item; others such as the zoom commands target the window as a whole, compare the notion of ``binding''~\cite{Wobbrock:2009:UGS:1518701.1518866}. The list of commands contains a majority of one-shot commands but also contains two commands that may suggest continuous control: ``increase value'' and ``decrease value'', compare the notion of ``flow''~\cite{Wobbrock:2009:UGS:1518701.1518866}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{c}
+Go one bar forward\\
+Go one bar back\\
+Jump to beginning\\
+Jump to end\\
+Toggle metronome\\
+Select all\\
+Cut selected region\\
+Copy selected region\\
+Paste copied or cut region\\
+Duplicate selected region\\
+Delete selected region\\
+Split selected region\\
+Glue selected regions\\ 
+Undo last action\\
+Redo action undone last\\
+Increase value of a control\\
+Decrease value of a control\\
+Fit selected track to window\\
+Fit selected region to window\\
+Fit all tracks to window: vertical\\
+Fit all tracks to window: horizontal\\
+Recall zoom preset
+\end{tabular}
+\end{center}
+\caption{\label{commands}The 22 commands examined in this study}
+\end{table}
+
+The initial survey served as a pre-test to improve the selection of gestures of the final survey. This turned out to be necessary as the number of possibly interesting gestures is far too high to be presented in one single pass. Even with two iterations, we had to limit the survey to one- and two-point gestures, despite the availability of three- and four-finger gestures on mobile devices.
+
+Representing the gestures in an appropriate graphical form for the survey turned out to be an unexpected problem. Specialized gesture clipart libraries such as~\cite{Gestureworks,Gesturecons} offer professional-quality graphics, which, however, contain too much detail to display them in randomized order on a $6\times 5$ grid. Hence, we opted for a highly reduced style in which one or two red dots indicate the starting points and dark lines show the motion, see Tables~\ref{tab:Survey1RateOfChoices} and~\ref{tab:Survey2Results}. A small number of gestures requires further explanations, which were also given in writing to the surveys' participants: \sixthpic[tap] denotes a tap, \sixthpic[tap-double] a double tap, \sixthpic[tap-hold] a temporally extended tap. \sixthpic[digits] represents any number drawn with the mouse or the finger; \sixthpic[letters] represents any alphabetic character.
+
+The surveys were implemented in both English and German and publicized using personal contacts as well as postings on Facebook and Linked-in to attract professional users. In addition, we circulated the surveys among students and recent graduates of study programs related to audio engineering and to media technology. We received 18 submissions for the initial survey and 59 for the final one. Adding all participants, 16\,\%{} were female; the self-reported expertise was distributed as follows: 43\,\%{} regard themselves as hobbyists, 25\,\%{} are students in a program related to audio or media technology, 16\,\%{} produce audio on a professional basis, 13\,\%{} are software developers, researchers or educators. Most users reported that they own a touch-enabled device; only 6\,\%{} neither use a touch-enabled device nor gesture-enabled desktop software. Table~\ref{tab:Survey1RateOfChoices} shows the frequency with which participants have picked each of the 30~gestures in the initial survey.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{cr|cr|cr} 
+\sixthpic[right]            &  14 & \sixthpic[up]           &  12 & \sixthpic[rotate-clockwise]              & 24 \\
+\sixthpic[right-up]         & 2 & \sixthpic[up-left]      &  10 & \sixthpic[rotate-counterclockwise]       & 16 \\ 
+\sixthpic[right-down]       & 17 & \sixthpic[up-right]     &  9 & \sixthpic[digit-1]                       &  9 \\ 
+\sixthpic[right-left]       & 5 & \sixthpic[up-down]      &  8 & \sixthpic[letter-a]                      & 32\\ 
+\sixthpic[right-left-right] &  7 & \sixthpic[up-down-up]   &  5 & \sixthpic[multi-pinch-horizontal]        & 15 \\ 
+\sixthpic[left]             &  17 & \sixthpic[down]         & 17 & \sixthpic[multi-pinch-vertical]          &  7 \\
+\sixthpic[left-up]          &  6 & \sixthpic[down-left]    &  5 & \sixthpic[multi-spread-horizontal]       & 21 \\ 
+\sixthpic[left-down]        &  2 & \sixthpic[down-right]   &  9 & \sixthpic[multi-spread-vertical]         & 15 \\ 
+\sixthpic[left-right]       &  11 & \sixthpic[down-up]      &  9 & \sixthpic[multi-rotate-clockwise]        &  7 \\ 
+\sixthpic[left-right-left]  &  13 & \sixthpic[down-up-down] &  5 & \sixthpic[multi-rotate-counterclockwise] &  6 \\ 
+\end{tabular}
+\end{center}
+\caption{Choice frequency of the gestures in the initial survey (total: 335)}
+\label{tab:Survey1RateOfChoices}
+\end{table}
+
+\section{Final survey and results}\label{final}
+
+For the second, final survey---see Tables~\ref{tab:Survey2Results}, \ref{tab:Survey2CumulativePopularity}, and~\ref{tab:Survey2AverageGroups}---we stayed with the number of 30~gestures, but removed the less popular multi-touch rotate and tridirectional types to free up slots for other gestures. We added some the ``tap'' types that had been requested by participants of the initial survey. To prevent the letter-A \sixthpic[letter-a] gesture of the first test to be mistaken for a triangle, we explicitly differentiated between a triangle \sixthpic[triangle] and an alphabetic character \sixthpic[letters].
+
+\begin{table*}
+\begin{center}
+\scriptsize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} 
+\cline{1-23}
  & \multicolumn{1}{v|}{Go one bar forward}
- & \multicolumn{1}{v|}{Go one bar back}
- & \multicolumn{1}{v|}{Jump to beginning}
- & \multicolumn{1}{v|}{Jump to end}
- & \multicolumn{1}{v|}{Toggle metronome}
- & \multicolumn{1}{v|}{Select all}
- & \multicolumn{1}{v|}{Cut selected region}
- & \multicolumn{1}{v|}{Copy selected region}
- & \multicolumn{1}{v|}{Paste copied or cut region}
- & \multicolumn{1}{v|}{Duplicate selected region}
- & \multicolumn{1}{v|}{Delete selected region}
- & \multicolumn{1}{v|}{Split selected region}
- & \multicolumn{1}{v|}{Glue selected regions} 
- & \multicolumn{1}{v|}{Undo last action}
- & \multicolumn{1}{v|}{Redo action undone last}
- & \multicolumn{1}{v|}{Increase value of a control}
- & \multicolumn{1}{v|}{Decrease value of a control}
- & \multicolumn{1}{v|}{Fit selected track to window}
- & \multicolumn{1}{v|}{Fit selected region to window}
- & \multicolumn{1}{v|}{Fit all tracks to window: vert.}
- & \multicolumn{1}{v|}{Fit all tracks to window: horiz.}
- & \multicolumn{1}{v|}{Recall zoom preset} \\ \hline \hline
-
-\multicolumn{1}{|w|}{Number of answers}
- & 17 & 18 & 18 & 17 & 11 & 17 & 14 & 14 & 16 & 16 & 14 & 16 & 14 & 18 & 18 & 16 & 15 & 11 & 14 & 14 & 14 & 13 \\ \hline
-
-\sixthpic[right]
- & 59 &  &  & 12 &  &  &  &  &  &  &  &  &  &  & 6 &  &  & 9 &  &  &  &  \\ \hline
-
-\sixthpic[right-up]
- &  &  &  &  &  &  & 7 &  &  &  &  &  &  &  &  &  &  &  & 7 &  &  &  \\ \hline
-
-\sixthpic[right-down]
- & 6 &  &  & 35 &  &  &  & 14 & 25 & 12 & 7 &  &  &  &  &  & 7 &  &  &  &  &  \\ \hline
-
-\sixthpic[right-left]
- & 6 &  & 17 &  &  &  &  &  &  &  &  & 6 &  &  &  &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[right-left-right]
- &  &  &  & 6 &  & 6 &  &  &  &  & 7 &  &  &  & 6 &  &  &  & 7 &  & 14 &  \\ \hline
-
-\sixthpic[left]
- &  & 11 & 28 &  &  &  &  &  &  &  & 7 &  &  & 11 &  &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[left-up]
- &  &  & 6 &  &  &  & 7 & 7 &  &  &  &  &  &  & 11 & 6 &  &  &  &  &  &  \\ \hline
-
-\sixthpic[left-down]
- &  & 6 &  &  &  &  &  &  & 6 &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[left-right]
- &  & 6 &  & 24 &  &  & 7 &  &  &  &  &  & 7 &  & 11 &  &  &  &  &  & 7 & 8 \\ \hline
-
-\sixthpic[left-right-left]
- &  &  & 6 &  &  &  &  &  &  &  & 21 &  &  & 22 & 6 &  &  & 18 & 7 &  & 7 &  \\ \hline
-
-\sixthpic[up]
- &  &  & 6 &  &  &  & 7 &  &  &  &  &  & 7 &  &  & 56 &  &  &  &  &  &  \\ \hline
-
-\sixthpic[up-left]
- &  & 17 & 22 &  & 9 &  &  &  &  &  &  &  &  & 11 &  &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[up-right]
- & 12 &  &  & 12 &  &  &  & 14 &  & 6 &  &  &  & 6 & 6 &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[up-down]
- &  &  &  &  &  &  & 7 & 14 &  & 19 &  & 6 &  &  & 6 &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[up-down-up]
- &  &  &  &  &  &  &  & 7 &  & 6 &  &  &  &  &  &  &  &  & 7 & 7 &  & 8 \\ \hline
-
-\sixthpic[down]
- &  &  &  & 6 &  &  &  & 7 & 19 &  & 14 & 12 &  &  &  &  & 53 &  &  &  &  &  \\ \hline
-
-\sixthpic[down-left]
- &  & 11 & 11 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 8 \\ \hline
-
-\sixthpic[down-right]
- & 6 &  &  &  & 9 &  &  &  & 19 & 12 & 7 &  &  &  & 6 &  &  &  &  &  &  &  \\ \hline
-
-\sixthpic[down-up]
- &  &  &  &  & 9 &  &  &  & 6 & 6 &  & 19 &  &  &  &  &  & 9 & 7 & 7 &  &  \\ \hline
-
-\sixthpic[down-up-down]
- &  &  &  &  &  &  & 7 &  & 6 &  &  &  &  &  &  &  &  &  &  & 21 &  &  \\ \hline
-
-\sixthpic[rotate-clockwise]
- &  & 11 &  & 6 &  & 35 &  & 14 &  & 12 & 7 &  &  & 11 & 17 & 25 &  &  &  &  &  & 8 \\ \hline
-
-\sixthpic[rotate-counterclockwise]
- & 12 &  &  &  &  & 18 &  &  &  & 6 &  &  & 7 & 17 & 6 &  & 29 &  &  &  & 7 &  \\ \hline
-
-\sixthpic[digit-1]
- &  &  &  &  & 18 & 6 & 7 &  & 6 &  & 7 &  &  & 6 &  &  &  &  &  &  &  & 15 \\ \hline
-
-\sixthpic[letter-a]
- &  &  &  &  & 55 & 29 & 29 & 14 & 6 & 12 & 7 & 6 &  & 11 & 11 &  &  & 9 & 7 & 7 & 7 & 15 \\ \hline
-
-\sixthpic[multi-pinch-horizontal]
- &  &  &  &  &  & 6 & 7 & 7 &  &  & 7 &  & 57 &  &  &  &  &  &  &  & 14 & 8 \\ \hline
-
-\sixthpic[multi-pinch-vertical]
- &  &  &  &  &  &  &  &  &  &  &  &  & 14 &  &  &  &  & 18 & 7 & 14 &  &  \\ \hline
-
-\sixthpic[multi-spread-horizontal]
- &  &  &  &  &  &  & 7 &  &  &  & 7 & 37 &  &  &  &  &  & 27 & 29 &  & 43 &  \\ \hline
-
-\sixthpic[multi-spread-vertical]
- &  &  &  &  &  &  & 7 &  &  &  &  & 12 &  &  &  &  &  &  & 21 & 43 &  & 23 \\ \hline
-
-\sixthpic[multi-rotate-clockwise]
- &  &  &  &  &  &  &  &  &  & 6 &  &  & 7 &  & 11 & 12 &  & 9 &  &  &  &  \\ \hline
-
-\sixthpic[multi-rotate-counterclockwise]
- &  &  & 6 &  &  &  &  &  & 6 &  &  &  &  & 6 &  &  & 13 &  &  &  &  & 8 \\ \hline
-
-\end{tabular}
-\caption{Results of the first survey (values in \textit{per cent}, rounded)}
-\end{table*}
-
-
-\subsection{Observations} \label{sec:Survey1Observations}
-
-
-\begin{table} \label{tab:Survey1CumulativePopularity}
-\begin{center}
-\begin{tabular}{|c|r||c|r||c|r|} \hline
-
-\sixthpic[right]            &  86 & \sixthpic[up]           &  76 & \sixthpic[rotate-clockwise]              & 146 \\ \hline
-\sixthpic[right-up]         &  14 & \sixthpic[up-left]      &  59 & \sixthpic[rotate-counterclockwise]       & 102 \\ \hline
-\sixthpic[right-down]       & 106 & \sixthpic[up-right]     &  56 & \sixthpic[digit-1]                       &  65 \\ \hline
-\sixthpic[right-left]       &  29 & \sixthpic[up-down]      &  52 & \sixthpic[letter-a]                      & 225 \\ \hline
-\sixthpic[right-left-right] &  46 & \sixthpic[up-down-up]   &  35 & \sixthpic[multi-pinch-horizontal]        & 106 \\ \hline
-\sixthpic[left]             &  57 & \sixthpic[down]         & 111 & \sixthpic[multi-pinch-vertical]          &  53 \\ \hline
-\sixthpic[left-up]          &  37 & \sixthpic[down-left]    &  30 & \sixthpic[multi-spread-horizontal]       & 150 \\ \hline
-\sixthpic[left-down]        &  12 & \sixthpic[down-right]   &  59 & \sixthpic[multi-spread-vertical]         & 106 \\ \hline
-\sixthpic[left-right]       &  70 & \sixthpic[down-up]      &  63 & \sixthpic[multi-rotate-clockwise]        &  45 \\ \hline
-\sixthpic[left-right-left]  &  87 & \sixthpic[down-up-down] &  34 & \sixthpic[multi-rotate-counterclockwise] &  39 \\ \hline
-
-\end{tabular}
-\end{center}
-\caption{Cumulative popularity of gestures in the first survey}
-\end{table}
-
-
-\begin{table} \label{tab:Survey1AverageGroups}
-\begin{center}
-\begin{tabular}{|l|r|} \hline
-
-Linear gestures starting rightwards &  56 \\ \hline
-Linear gestures starting leftwards  &  53 \\ \hline
-Linear gestures starting upwards    &  56 \\ \hline
-Linear gestures starting downwards  &  59 \\ \hline \hline
-
-Unidirectional gestures             &  82 \\ \hline
-$90^\circ$ gestures                 &  47 \\ \hline
-Bidirectional gestures              &  53 \\ \hline
-Tridirectional gestures             &  50 \\ \hline \hline
-
-Rotate gestures                     & 124 \\ \hline \hline
-
-Letter gestures                     & 225 \\ \hline
-Digit gestures                      &  65 \\ \hline \hline
-
-Multi-touch pinch gestures          &  79 \\ \hline
-Multi-touch spread gestures         & 128 \\ \hline
-Multi-touch rotate gestures         &  42 \\ \hline
-
-\end{tabular}
-\end{center}
-\caption{Average popularity of gesture groups in the first survey}
-\end{table}
-
-
-\section{Second survey} \label{sec:Survey2}
-
-\subsection{Changes} \label{sec:Survey2Changes}
-
-\subsection{Results} \label{sec:Survey2Results}
-
-
-
-\begin{table} \label{tab:Survey2FrequencyOfChoices}
-\begin{center}
-\begin{tabular}{|c|r||c|r||c|r|} \hline
-
-\sixthpic[tap]        & 50 & \sixthpic[tap-hold]   & 55 & \sixthpic[rotate-clockwise]        & 53 \\ \hline
-\sixthpic[tap-double] & 63 & \sixthpic[triangle]   & 45 & \sixthpic[rotate-counterclockwise] & 48 \\ \hline
-\sixthpic[right]      & 45 & \sixthpic[up]         & 46 & \sixthpic[digits]                  & 18 \\ \hline
-\sixthpic[right-up]   & 11 & \sixthpic[up-left]    & 30 & \sixthpic[letters]                 & 63 \\ \hline
-\sixthpic[right-down] & 24 & \sixthpic[up-right]   & 32 & \sixthpic[sign-x]                  & 62 \\ \hline
-\sixthpic[right-left] & 39 & \sixthpic[up-down]    & 19 & \sixthpic[sign-+]                  & 52 \\ \hline
-\sixthpic[left]       & 52 & \sixthpic[down]       & 60 & \sixthpic[multi-pinch-horizontal]  & 53 \\ \hline
-\sixthpic[left-up]    &  7 & \sixthpic[down-left]  & 28 & \sixthpic[multi-pinch-vertical]    & 20 \\ \hline
-\sixthpic[left-down]  & 19 & \sixthpic[down-right] & 29 & \sixthpic[multi-spread-horizontal] & 54 \\ \hline
-\sixthpic[left-right] & 33 & \sixthpic[down-up]    & 30 & \sixthpic[multi-spread-vertical]   & 28 \\ \hline
-
-\end{tabular}
-\end{center}
-\caption{Choice frequency for different gestures in the second survey}
-\end{table}
-
-
-
-
-\begin{table*} \label{tab:Survey2Results}
-\footnotesize
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|} \hline
-
- & \multicolumn{1}{v|}{Go one bar forward}
- & \multicolumn{1}{v|}{Go one bar back}
+ & \multicolumn{1}{v|}{Go one bar backward}
  & \multicolumn{1}{v|}{Jump to beginning}
  & \multicolumn{1}{v|}{Jump to end}
  & \multicolumn{1}{v|}{Toggle metronome}
@@ -444,183 +161,187 @@ Multi-touch rotate gestures         &  42 \\ \hline
  & \multicolumn{1}{v|}{Decrease value of a control}
  & \multicolumn{1}{v|}{Fit selected track to window}
  & \multicolumn{1}{v|}{Fit selected region to window}
- & \multicolumn{1}{v|}{Fit all tracks to window: vert.}
+ & \multicolumn{1}{v|}{Fit all tracks to window: vertical}
  & \multicolumn{1}{v|}{Fit all tracks to window: horiz.}
- & \multicolumn{1}{v|}{Recall zoom preset} \\ \hline \hline
-
+ & \multicolumn{1}{v|}{Recall zoom preset} \\
+ \cline{1-23}
 \multicolumn{1}{|w|}{Number of answers}
- & 54 & 54 & 54 & 54 & 53 & 54 & 53 & 52 & 54 & 49 & 54 & 54 & 54 & 53 & 54 & 54 & 54 & 53 & 53 & 51 & 54 & 49 \\ \hline
-
+ & 54 & 54 & 54 & 54 & 53 & 54 & 53 & 52 & 54 & 49 & 54 & 54 & 54 & 53 & 54 & 54 & 54 & 53 & 53 & 51 & 54 & 49 \\
+ \cline{2-23}
 \sixthpic[tap]
- &  4 &  4 &  4 &  6 &  6 &  4 &  2 &  6 &  6 &  4 &  4 &  6 &  2 &  6 &  6 &  2 &  2 &  6 &  4 &  4 &  4 &  8 \\ \hline
+ &  4 &  4 &  4 &  6 &  6 &  4 &  2 &  6 &  6 &  4 &  4 &  6 &  2 &  6 &  6 &  2 &  2 &  6 &  4 &  4 &  4 &  8 \\ \cline{2-23}
 
 \sixthpic[tap-double]
- &    &    &  2 &  2 &  9 & 22 &  6 & 13 & 15 & 18 &  4 &    &  2 &    &    &    &    &  9 &  8 &    &    & 10 \\ \hline
+ &    &    &  2 &  2 &  9 & 22 &  6 & 13 & 15 & 18 &  4 &    &  2 &    &    &    &    &  9 &  8 &    &    & 10 \\ \cline{2-23}
 
 \sixthpic[tap-hold]
- &    &    &  2 &  4 &  4 & 11 &  4 & 12 & 13 &  2 &  2 &    &    &  6 &  2 &    &    &  4 &  9 &  4 &  4 & 12 \\ \hline
+ &    &    &  2 &  4 &  4 & 11 &  4 & 12 & 13 &  2 &  2 &    &    &  6 &  2 &    &    &  4 &  9 &  4 &  4 & 12 \\ \cline{2-23}
 
 \sixthpic[triangle]
- &    &    &    &    & 44 &  6 &  9 &  6 &  4 &  4 &    &  2 &  6 &    &  2 &  2 &    &  6 &  2 &  2 &    &  2 \\ \hline
+ &    &    &    &    & \underline{44} &  6 &  9 &  6 &  4 &  4 &    &  2 &  6 &    &  2 &  2 &    &  6 &  2 &  2 &    &  2 \\ \cline{2-23}
 
 \sixthpic[right]
- & 50 &  2 &  2 & 13 &    &    &    &  2 &    &  4 &  2 &  2 &    &    &  4 &    &    &  2 &    &    &  2 &    \\ \hline
+ & \underline{50} &  2 &  2 & 13 &    &    &    &  2 &    &  4 &  2 &  2 &    &    &  4 &    &    &  2 &    &    &  2 &    \\ \cline{2-23}
 
 \sixthpic[right-up]
- &  7 &    &    &    &    &    &  2 &    &    &  2 &    &  2 &  2 &    &    &  4 &    &    &    &    &    &  2 \\ \hline
+ &  7 &    &    &    &    &    &  2 &    &    &  2 &    &  2 &  2 &    &    &  4 &    &    &    &    &    &  2 \\ \cline{2-23}
 
 \sixthpic[right-down]
- &  6 &    &    & 13 &    &  4 &    &    & 11 &    &  2 &  2 &    &    &  2 &    &  4 &  2 &    &    &    &    \\ \hline
+ &  6 &    &    & 13 &    &  4 &    &    & 11 &    &  2 &  2 &    &    &  2 &    &  4 &  2 &    &    &    &    \\ \cline{2-23}
 
 \sixthpic[right-left]
- &    &    &  5 &    &  6 &  9 &  2 &  2 &    &  4 &    &    &  4 &  2 &  9 &    &    &  4 &  8 &  2 & 13 &  4 \\ \hline
+ &    &    &  5 &    &  6 &  9 &  2 &  2 &    &  4 &    &    &  4 &  2 &  9 &    &    &  4 &  8 &  2 & 13 &  4 \\ \cline{2-23}
 
 \sixthpic[left]
- &    & 44 & 12 &  4 &    &    &  2 &    &    &    & 15 &    &    & 15 &  4 &    &    &    &    &    &    &    \\ \hline
+ &    & \underline{44} & 12 &  4 &    &    &  2 &    &    &    & 15 &    &    & 15 &  4 &    &    &    &    &    &    &    \\ \cline{2-23}
 
 \sixthpic[left-up]
- &  2 &  4 &    &    &  2 &    &    &    &    &    &    &    &    &    &    &    &    &    &  2 &    &  2 &  2 \\ \hline
+ &  2 &  4 &    &    &  2 &    &    &    &    &    &    &    &    &    &    &    &    &    &  2 &    &  2 &  2 \\ \cline{2-23}
 
 \sixthpic[left-down]
- &    &  4 &  7 &    &  2 &    &    &  2 &  4 &    &  4 &  2 &    &  4 &  4 &    &  4 &    &    &    &    &    \\ \hline
+ &    &  4 &  7 &    &  2 &    &    &  2 &  4 &    &  4 &  2 &    &  4 &  4 &    &  4 &    &    &    &    &    \\ \cline{2-23}
 
 \sixthpic[left-right]
- &    &    &  2 &  4 &  2 &  2 &  6 &  2 &    &  2 &  4 &  4 &  4 &  8 &  2 &    &    &  4 &  2 &  2 & 15 &    \\ \hline
+ &    &    &  2 &  4 &  2 &  2 &  6 &  2 &    &  2 &  4 &  4 &  4 &  8 &  2 &    &    &  4 &  2 &  2 & 15 &    \\ \cline{2-23}
 
 \sixthpic[up]
- &    &    &  7 &    &    &    &    &  2 &  2 &    &    &  2 &  2 &    &    & 65 &    &  4 &    &    &    &  2 \\ \hline
+ &    &    &  7 &    &    &    &    &  2 &  2 &    &    &  2 &  2 &    &    & \underline{65} &    &  4 &    &    &    &  2 \\ \cline{2-23}
 
 \sixthpic[up-left]
- & 13 &    &    & 17 &    &    &  2 &    &  4 &  4 &  2 &    &    &    &  4 &    &  2 &  4 &    &  4 &  2 &    \\ \hline
+ & 13 &    &    & 17 &    &    &  2 &    &  4 &  4 &  2 &    &    &    &  4 &    &  2 &  4 &    &  4 &  2 &    \\ \cline{2-23}
 
 \sixthpic[up-right]
- &    & 11 & 25 &    &    &    &  2 &    &    &    &  6 &    &    &  6 &  6 &    &    &    &    &    &  2 &  2 \\ \hline
+ &    & 11 & 25 &    &    &    &  2 &    &    &    &  6 &    &    &  6 &  6 &    &    &    &    &    &  2 &  2 \\ \cline{2-23}
 
 \sixthpic[up-down]
- &  2 &    &    &  2 &    &    &  2 &  4 &  2 &    &    &  4 &    &    &    &  2 &    &  2 &  4 & 10 &  2 &  2 \\ \hline
+ &  2 &    &    &  2 &    &    &  2 &  4 &  2 &    &    &  4 &    &    &    &  2 &    &  2 &  4 & 10 &  2 &  2 \\ \cline{2-23}
 
 \sixthpic[down]
- &    &  2 &    &  4 &  2 &    &  6 &  2 &  9 &    &  2 &  9 &  2 &    &    &    & 67 &  2 &    &  4 &  2 &    \\ \hline
+ &    &  2 &    &  4 &  2 &    &  6 &  2 &  9 &    &  2 &  9 &  2 &    &    &    &\underline{67} &  2 &    &  4 &  2 &    \\ \cline{2-23}
 
 \sixthpic[down-left]
- &    & 25 & 20 &  6 &    &    &    &  2 &    &    &  4 &    &    &  2 &  2 &    &    &    &    &    &    &    \\ \hline
+ &    & 25 & 20 &  6 &    &    &    &  2 &    &    &  4 &    &    &  2 &  2 &    &    &    &    &    &    &    \\ \cline{2-23}
 
 \sixthpic[down-right]
- & 11 &    &    & 20 &    &    &  2 &    &  6 &  2 &  2 &  6 &    &    &  4 &    &    &    &    &    &  2 &    \\ \hline
+ & 11 &    &    & 20 &    &    &  2 &    &  6 &  2 &  2 &  6 &    &    &  4 &    &    &    &    &    &  2 &    \\ \cline{2-23}
 
 \sixthpic[down-up]
- &    &    &    &    &  2 &  2 &  2 &  4 &  4 &    &  2 & 15 &  4 &    &    &    &  2 &  4 &  2 & 10 &  4 &  2 \\ \hline
+ &    &    &    &    &  2 &  2 &  2 &  4 &  4 &    &  2 & 15 &  4 &    &    &    &  2 &  4 &  2 & 10 &  4 &  2 \\ \cline{2-23}
 
 \sixthpic[rotate-clockwise]
- &  2 &  4 &  4 &    &  2 &  9 &    &  4 &    &  6 &    &  2 &    & 11 & 33 & 19 &  2 &    &  2 &    &    &  6 \\ \hline
+ &  2 &  4 &  4 &    &  2 &  9 &    &  4 &    &  6 &    &  2 &    & 11 & \underline{33} & 19 &  2 &    &  2 &    &    &  6 \\ \cline{2-23}
 
 \sixthpic[rotate-counterclockwise]
- &  2 &  4 &    &  2 &    &  9 &  2 &  2 &    &    &    &    &  2 & 32 &  9 &  2 & 17 &    &  2 &    &    &    \\ \hline
+ &  2 &  4 &    &  2 &    &  9 &  2 &  2 &    &    &    &    &  2 & \underline{32} &  9 &  2 & 17 &    &  2 &    &    &    \\ \cline{2-23}
 
 \sixthpic[digits]
- &  2 &  2 &    &  2 &  4 &  2 &    &    &    &  6 &    &    &    &    &    &  2 &    &  8 &  2 &    &    &  6 \\ \hline
+ &  2 &  2 &    &  2 &  4 &  2 &    &    &    &  6 &    &    &    &    &    &  2 &    &  8 &  2 &    &    &  6 \\ \cline{2-23}
 
 \sixthpic[letters]
- &    &    &  2 &    & 21 &  7 &  8 & 12 &  6 & 18 &  2 &  7 &  4 &    &  4 &    &    &  2 &  6 &  4 &  4 & 16 \\ \hline
+ &    &    &  2 &    & 21 &  7 &  8 & 12 &  6 & 18 &  2 &  7 &  4 &    &  4 &    &    &  2 &  6 &  4 &  4 & 16 \\ \cline{2-23}
 
 \sixthpic[sign-x]
- &    &  2 &    &  2 &    &  9 & 30 &    &  2 &  6 & 33 &  4 &  4 &  2 &  2 &  2 &    &  4 &  9 &    &  4 &  2 \\ \hline
+ &    &  2 &    &  2 &    &  9 & \underline{30} &    &  2 &  6 & \underline{ 33} &  4 &  4 &  2 &  2 &  2 &    &  4 &  9 &    &  4 &  2 \\ \cline{2-23}
 
 \sixthpic[sign-+]
- &    &  2 &  2 &  2 &  4 &  4 &  8 & 15 &  7 & 10 &  9 &  9 &  6 &  8 &  4 &    &    &  4 &  2 &  2 &  2 &    \\ \hline
+ &    &  2 &  2 &  2 &  4 &  4 &  8 & 15 &  7 & 10 &  9 &  9 &  6 &  8 &  4 &    &    &  4 &  2 &  2 &  2 &    \\ \cline{2-23}
 
 \sixthpic[multi-pinch-horizontal]
- &    &    &    &    &    &    &    &    &  4 &    &  2 &    & 50 &    &    &    &  2 & 11 &  4 &  4 & 17 &  6 \\ \hline
+ &    &    &    &    &    &    &    &    &  4 &    &  2 &    & \underline{50} &    &    &    &  2 & 11 &  4 &  4 & 17 &  6 \\ \cline{2-23}
 
 \sixthpic[multi-pinch-vertical]
- &    &    &  2 &    &    &  4 &    &    &  2 &    &    &    &  2 &    &    &    &    &  2 &  8 & 22 &  6 &    \\ \hline
+ &    &    &  2 &    &    &  4 &    &    &  2 &    &    &    &  2 &    &    &    &    &  2 &  8 & 22 &  6 &    \\ \cline{2-23}
 
 \sixthpic[multi-spread-horizontal]
- &    &    &    &    &    &  2 &    &  4 &  2 &  4 &  2 & 22 &  2 &    &    &  2 &    &  6 & 26 &  8 & 15 &  8 \\ \hline
+ &    &    &    &    &    &  2 &    &  4 &  2 &  4 &  2 & 22 &  2 &    &    &  2 &    &  6 & \underline{26} &  8 & 15 &  8 \\ \cline{2-23}
 
 \sixthpic[multi-spread-vertical]
- &    &    &    &    &  2 &    &    &    &    &  2 &    &  2 &    &    &    &    &    & 13 &    & 20 &  2 &  6 \\ \hline
-
+ &    &    &    &    &  2 &    &    &    &    &  2 &    &  2 &    &    &    &    &    & 13 &    & 20 &  2 &  6 \\ \cline{1-23}
 \end{tabular}
-\caption{Results of the second survey (values in \textit{per cent}, rounded)}
+\end{center}
+\caption{Results of the second survey (values for gestures in percent, rounded, summing to 100\,\%{} per column; percentages above 25\,\%{} underlined)}\label{tab:Survey2Results}
 \end{table*}
 
-
-
-
-\subsection{Observations} \label{sec:Survey2Observations}
-
-
-
-\begin{table} \label{tab:Survey2CumulativePopularity}
+\begin{table} 
 \begin{center}
-\begin{tabular}{|c|r||c|r||c|r|} \hline
+\begin{tabular}{cr|cr|cr} 
 
-\sixthpic[tap]        & 100 & \sixthpic[tap-hold]   &  95 & \sixthpic[rotate-clockwise]        & 106 \\ \hline
-\sixthpic[tap-double] & 120 & \sixthpic[triangle]   &  97 & \sixthpic[rotate-counterclockwise] &  83 \\ \hline
-\sixthpic[right]      &  85 & \sixthpic[up]         &  86 & \sixthpic[digits]                  &  36 \\ \hline
-\sixthpic[right-up]   &  21 & \sixthpic[up-left]    &  58 & \sixthpic[letters]                 & 123 \\ \hline
-\sixthpic[right-down] &  46 & \sixthpic[up-right]   &  60 & \sixthpic[sign-x]                  & 117 \\ \hline
-\sixthpic[right-left] &  74 & \sixthpic[up-down]    &  38 & \sixthpic[sign-+]                  & 100 \\ \hline
-\sixthpic[left]       &  96 & \sixthpic[down]       & 113 & \sixthpic[multi-pinch-horizontal]  & 100 \\ \hline
-\sixthpic[left-up]    &  14 & \sixthpic[down-left]  &  61 & \sixthpic[multi-pinch-vertical]    &  48 \\ \hline
-\sixthpic[left-down]  &  37 & \sixthpic[down-right] &  55 & \sixthpic[multi-spread-horizontal] & 103 \\ \hline
-\sixthpic[left-right] &  65 & \sixthpic[down-up]    &  59 & \sixthpic[multi-spread-vertical]   &  47 \\ \hline
+\sixthpic[tap]        & 50 & \sixthpic[tap-hold]   & 55 & \sixthpic[rotate-clockwise]        & 53 \\ 
+\sixthpic[tap-double] & 63 & \sixthpic[triangle]   & 45 & \sixthpic[rotate-counterclockwise] & 48 \\ 
+\sixthpic[right]      & 45 & \sixthpic[up]         &  46 & \sixthpic[digits]                  & 18 \\ 
+\sixthpic[right-up]   &  11 & \sixthpic[up-left]    & 30 & \sixthpic[letters]                 & 63 \\ 
+\sixthpic[right-down] &  24 & \sixthpic[up-right]   &  32 & \sixthpic[sign-x]                  & 62 \\ 
+\sixthpic[right-left] & 39 & \sixthpic[up-down]    & 19 & \sixthpic[sign-+]                  & 52 \\ 
+\sixthpic[left]       &  52 & \sixthpic[down]       & 60 & \sixthpic[multi-pinch-horizontal]  &  53 \\ 
+\sixthpic[left-up]    &  7 & \sixthpic[down-left]  & 28 & \sixthpic[multi-pinch-vertical]    &  20 \\ 
+\sixthpic[left-down]  & 19 & \sixthpic[down-right] &  29 & \sixthpic[multi-spread-horizontal] & 54 \\ 
+\sixthpic[left-right] & 33 & \sixthpic[down-up]    & 30 & \sixthpic[multi-spread-vertical]   &  28 \\
 
 \end{tabular}
 \end{center}
-\caption{Cumulative popularity of gestures in the second survey}
+\caption{Choice frequency of the gestures in the second survey (total number: 1168)}
+\label{tab:Survey2CumulativePopularity}
 \end{table}
 
-
-\begin{table} \label{tab:Survey2Groups}
+\begin{table}
 \begin{center}
-\begin{tabular}{|l|r|} \hline
+\begin{tabular}{lr} 
 
-Linear gestures starting rightwards & 119 \\ \hline
-Linear gestures starting leftwards  & 111 \\ \hline
-Linear gestures starting upwards    & 127 \\ \hline
-Linear gestures starting downwards  & 147 \\ \hline \hline
+Linear gestures starting rightward &  119 \\ 
+Linear gestures starting leftward  &  111 \\ 
+Linear gestures starting upward    &  127 \\ 
+Linear gestures starting downward  &  147 \\  \hline
 
-Unidirectional gestures             & 203 \\ \hline
-$90^\circ$ gestures                 & 180 \\ \hline
-Bidirectional gestures              & 121 \\ \hline \hline
+Unidirectional gestures             &  203 \\ 
+$90^\circ$ gestures                 &  180 \\ 
+Bidirectional gestures              &  121 \\  \hline
 
-Rotate gestures                     & 101 \\ \hline \hline
+Rotate gestures                     &  101 \\  \hline
 
-Letter gestures                     &  63 \\ \hline
-Digit gestures                      &  18 \\ \hline
-Tap gestures                        & 168 \\ \hline
-Sign gestures (+, x, triangle)      & 159 \\ \hline \hline
+Letter gestures                     & 63 \\ 
+Digit gestures                      &  18 \\ 
+Tap gestures                        & 168 \\ 
+Sign gestures (+, x, triangle)      & 159 \\  \hline
 
-Multi-touch pinch gestures          &  73 \\ \hline
-Multi-touch spread gestures         &  82 \\ \hline \hline
+Multi-touch pinch gestures          &  73 \\ 
+Multi-touch spread gestures         &  82 \\ \hline
 
-Simple single-touch gestures        & 672 \\ \hline
-Complex single-touch gestures       & 341 \\ \hline
-Multi-touch gestures                & 155 \\ \hline
+Simple single-touch gestures        & 672 \\ 
+Complex single-touch gestures       &  341 \\ 
+Multi-touch gestures                &  155 \\ 
 
 \end{tabular}
 \end{center}
-\caption{Popularity of gesture groups in the second survey}
+\caption{Average frequency of gesture groups in the final survey (total number: 1168). Note that these groups are not mutually exclusive}
+\label{tab:Survey2AverageGroups}
 \end{table}
 
+The strongest agreements between the participants can be found in a number of complementary gestures for complementary function, which supports a similar finding of~\cite{Wobbrock:2009:UGS:1518701.1518866}: \sixthpic[up] and \sixthpic[down] are clear candidates for increasing and decreasing a parameter; \sixthpic[right] and \sixthpic[left] are prevalent choices for jumping by one bar; \sixthpic[rotate-clockwise] and \sixthpic[rotate-counterclockwise] are preferred for undo/redo. One would have to study, though, if users also prefer linear gestures for controls that are graphically represented as knobs. The connection between the rotate gesture and undo/redo may indicate that the choice is influenced by the standard icons used in desktop software.
 
+The gesture \sixthpic[sign-x] is assigned to both Cut and Delete, again as noted by~\cite{Wobbrock:2009:UGS:1518701.1518866} in a general context. It may be useful to combine Cut and Delete to a single command. The \sixthpic[triangle] gesture was connected to the metronome function, obviously due to the similarity in shape. The multi-touch gestures
+\sixthpic[multi-pinch-horizontal]
+\sixthpic[multi-pinch-vertical]
+\sixthpic[multi-spread-horizontal]
+\sixthpic[multi-spread-vertical]
+have been assigned in about 20\,\%{} of the answers to zoom functions. In contrast, the ``horizontal pinch'' multi-touch gesture \sixthpic[multi-pinch-horizontal] is assigned to the glue command in 50\,\%{} of the answers. Giving the preponderance of multi-touch zoom gestures in mobile applications, this seems surprisingly and may be due to learning that has to take place. 
 
+Some general insights from our survey are: Simple, linear or rotational gestures are favored. Tap gestures are among the standard choices. Alphabetic characters \sixthpic[letters] are picked three times more often than number \sixthpic[digits]. Angled gestures do not offer a clear connection to commands.
 
-\section{Conclusions} \label{sec:Conclusions}
+\section{Conclusions and Outlook} \label{sec:Conclusions}
 
+This paper has presented first results on which mouse and touch gestures are of interest to control DAW software. The answers of the participants in our surveys confirm former, general studies, but also indicate specific choices for DAW software concerning for instance commands for glueing and the metronome.
 
-%It is interesting to see how persistent the usage of button widgets in DAW software became:
-%Even in the recently unveiled Garageband for iPad DAW the playback is controlled by three
-%buttons\cite{GaragebandIpadDemo} (Jump to the beginning/Stop, Play/Pause and Record),
-%as in spite of running on a multi-touch enabled platform. 
+Rather then presenting a fixed choice of gestures, future investigations could try to learn from users~\cite{Akers:2007:ODM:1240866.1240868}, because their statements may not conform to what they actually like or understand. This would require training the participants of the tests so that they can fully exploit the range of possible gestures. An approach that is even more user-centered would enable users to assign {\em custom} gestures. However, this does not seem popular with current touch-enabled applications; it is even rare to see a user creating his or her custom keyboard shortcuts.
 
-Accelerometer used for velocity-sensitivity in Garageband for iPad\cite{GaragebandIpadDemo}.
+Much research has explored gestures and their mappings to commands. There is, however, still much to invent and examine when it comes to preventing fatigue and to show cues for gestures on the display (Which parts can be operated? With which gestures?)~\cite{fatigue}. Touch screens pose a usability conundrum. If mounted vertically, they are easy to read but strenuous to touch---and vice versa, if mounted horizontally. Gestures executed with the mouse, on notebook computer's mousepad or on a touch surface on the mouse may be of advantage here.
 
-Conducting using Kinect\cite{KinectConductingGameIdea}
+The development may not stop here, as Apple GarageBand for iPad demonstrates with its simulation of velocity sensing through the built-in accelerometer \cite{garage}. But the very same software also shows how persistent the use of button widgets in DAW software has become: Even in GarageBand, gestures have not rendered the classic VCR-style buttons ``Jump to the beginning'', ``Play'', and ``Record'' obsolete. In addition, the lack of haptic feedback~\cite{Buxton:1985:ITT:325165.325239} largely remains unsolved, despite first attempts for solutions through vibration or electric induction.
+
+Besides a rapidly increasing number of devices with (multi-)touch interfaces we see a variety of novel human-computer interface devices used in games. For instance, the Wii remote controller offers itself as both a pointing device and as gesture input device, which may be used to control DAW software~\cite{wii}. Microsoft Kinect, a 3D camera intended to be used as a game controller, currently is the basis for a huge number of experiments on gestural control, conducted by both researchers and hobbyists. One use of this devices could be to ``conduct'' a DAW in a highly expressive fashion---similar to how one would conduct an orchestra.
 
 \section{Acknowledgements} \label{sec:Acknowledgements}
+
+We thank the participants of our surveys for their time and effort.
 
 \bibliographystyle{abbrv}
 \bibliography{GesturesInDAW}
